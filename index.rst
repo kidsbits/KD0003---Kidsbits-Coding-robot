@@ -1,9 +1,11 @@
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 3
    :caption: KD0003 Coding Robot for Arduino
 
    
-   KD0003.md  
+   home.md  
+   Arduino/arduino.md
+   Kidsblock/kidsblock.md
   
  
