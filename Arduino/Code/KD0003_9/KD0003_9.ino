@@ -1,8 +1,8 @@
 /*
-  科易创客教育编程小黄车
-  课程9
-  循黑线智能车
-  http://www.keyes-robot.com
+kidsbits coding robot kit
+Project 9
+Line Tracking robot
+http//www.kidsbits.cc
 */
 #include <Matrix.h>
 

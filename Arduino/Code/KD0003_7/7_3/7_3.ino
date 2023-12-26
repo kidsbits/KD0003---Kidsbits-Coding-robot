@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 7-3
+8*8 Dot Matrix Dispaly
+http//www.kidsbits.cc
+*/
 #include <Matrix.h>
 
 Matrix myMatrix(A4,A5);       //实例化一个对象名为myMatrix，和定义通讯引脚

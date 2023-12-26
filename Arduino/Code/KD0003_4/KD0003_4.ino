@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 4
+Distance Detector
+http//www.kidsbits.cc
+*/
 volatile int distance;        //定义一个变量名distance
 
 float checkdistance_2_3() {     //定义一个测距函数

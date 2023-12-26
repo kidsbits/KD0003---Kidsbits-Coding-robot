@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 6
+Motor
+http//www.kidsbits.cc
+*/
 void setup(){
   pinMode(8, OUTPUT);
   pinMode(A1, OUTPUT);

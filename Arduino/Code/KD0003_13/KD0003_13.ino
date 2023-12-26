@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 13
+Bluetooth Knowledge
+http//www.kidsbits.cc
+*/
 #include <Matrix.h>
 
 volatile char val;

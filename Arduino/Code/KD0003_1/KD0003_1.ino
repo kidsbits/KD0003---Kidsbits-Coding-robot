@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 1
+Blinking LED
+http//www.kidsbits.cc
+*/
 int led=12;   //set to digital port
 void setup()
 {

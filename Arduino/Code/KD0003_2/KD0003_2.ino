@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 2
+Playing Music
+http//www.kidsbits.cc
+*/
 void setup(){
   pinMode(6, OUTPUT);
 }

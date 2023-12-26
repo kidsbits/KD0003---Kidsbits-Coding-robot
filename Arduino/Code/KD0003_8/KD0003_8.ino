@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 8
+Obstacle Avoidance Robot
+http//www.kidsbits.cc
+*/
 volatile int distance;
 volatile int distance1;
 volatile int distance2;

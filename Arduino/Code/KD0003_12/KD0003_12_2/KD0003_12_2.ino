@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 12-2
+Bluetooth Control LED
+http//www.kidsbits.cc
+*/
 int ledpin = 12;
 void setup()
 {

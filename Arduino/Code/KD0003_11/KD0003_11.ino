@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 11
+Sound-controlled Smart Car
+http//www.kidsbits.cc
+*/
 #include <Matrix.h>        
 Matrix myMatrix(A4, A5);    //实例化一个对象名为myMatrix，和定义通讯引脚
 volatile int distance;     //超声波测距变量

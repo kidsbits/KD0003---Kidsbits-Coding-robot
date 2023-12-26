@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 3
+Birthday Gift
+http//www.kidsbits.cc
+*/
 void setup(){
   Serial.begin(9600);   //设置波特率为9600
   pinMode(6, OUTPUT);  //设置模拟口A6为输出

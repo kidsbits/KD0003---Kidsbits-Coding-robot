@@ -241,29 +241,29 @@ reverse wiring-up. As shown below, we connect the LED module to the digital port
 
 Test Code：
 
-int led=12; //set to digital port
+    int led=12; //set to digital port
 
-void setup()
+    void setup()
 
-{
+    {
 
-pinMode(led, OUTPUT); //set led to OUTPUT
+    pinMode(led, OUTPUT); //set led to OUTPUT
 
-}
+    }
 
-void loop()
+    void loop()
 
-{
+    {
 
-digitalWrite(led,HIGH); //led outputs high levels, LED on
+    digitalWrite(led,HIGH); //led outputs high levels, LED on
 
-delay(500); //delay in 500ms
+    delay(500); //delay in 500ms
 
-digitalWrite(led,LOW); //led outputs low levels, LED off
+    digitalWrite(led,LOW); //led outputs low levels, LED off
 
-delay(500);
+    delay(500);
 
-}
+    }
 
 Test Result：
 
@@ -286,29 +286,29 @@ delay(500); a delay function, 500 is the delay time, unit is ms
 We have succeeded in blinking LED. Next, let’s observe what will happen to the
 LED if we modify pins and delay time.
 
-int led=12; //set to digital port
+    int led=12; //set to digital port
 
-void setup()
+    void setup()
 
-{
+    {
 
-pinMode(led, OUTPUT); //set led to OUTPUT
+    pinMode(led, OUTPUT); //set led to OUTPUT
 
-}
+    }
 
-void loop()
+    void loop()
 
-{
+    {
 
-digitalWrite(led,HIGH); // led outputs high levels, LED on
+    digitalWrite(led,HIGH); // led outputs high levels, LED on
 
-delay(100); //delay in 100ms
+    delay(100); //delay in 100ms
 
-digitalWrite(led,LOW); //led outputs low levels, LED off
+    digitalWrite(led,LOW); //led outputs low levels, LED off
 
-delay(100);
+    delay(100);
 
-}
+    }
 
 The test result shows that the LED flashes faster. Therefore, we can draw a
 conclusion that pins and time delaying affect flash frequency.
@@ -380,115 +380,115 @@ Upload the code to Arduino IDE
 
 Turn off the Bluetooth switch before uploading the code.
 
-void setup(){
+    void setup(){
 
-pinMode(6, OUTPUT);
+    pinMode(6, OUTPUT);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,440);
+    tone(6,440);
 
-delay(250);
+    delay(250);
 
-tone(6,392);
+    tone(6,392);
 
-delay(250);
+    delay(250);
 
-tone(6,532);
+    tone(6,532);
 
-delay(250);
+    delay(250);
 
-tone(6,494);
+    tone(6,494);
 
-delay(500);
+    delay(500);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,440);
+    tone(6,440);
 
-delay(250);
+    delay(250);
 
-tone(6,392);
+    tone(6,392);
 
-delay(250);
+    delay(250);
 
-tone(6,587);
+    tone(6,587);
 
-delay(250);
+    delay(250);
 
-tone(6,532);
+    tone(6,532);
 
-delay(500);
+    delay(500);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,784);
+    tone(6,784);
 
-delay(250);
+    delay(250);
 
-tone(6,659);
+    tone(6,659);
 
-delay(250);
+    delay(250);
 
-tone(6,532);
+    tone(6,532);
 
-delay(250);
+    delay(250);
 
-tone(6,494);
+    tone(6,494);
 
-delay(250);
+    delay(250);
 
-tone(6,440);
+    tone(6,440);
 
-delay(250);
+    delay(250);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,330);
+    tone(6,330);
 
-delay(250);
+    delay(250);
 
-tone(6,262);
+    tone(6,262);
 
-delay(250);
+    delay(250);
 
-tone(6,587);
+    tone(6,587);
 
-delay(250);
+    delay(250);
 
-tone(6,532);
+    tone(6,532);
 
-delay(500);
+    delay(500);
 
-}
+    }
 
 4\. Test Result：
 
@@ -588,164 +588,164 @@ connected to A6 port.
 
 Test Code：
 
-void setup(){
+    void setup(){
 
-Serial.begin(9600); //Set baud rate to 9600
+    Serial.begin(9600); //Set baud rate to 9600
 
-pinMode(6, OUTPUT); //Set A6 to OUTPUT
+    pinMode(6, OUTPUT); //Set A6 to OUTPUT
 
-pinMode(12, OUTPUT); //set 12 to OUTPUT
+    pinMode(12, OUTPUT); //set 12 to OUTPUT
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-Serial.println(analogRead(A6)); //read the analog value of A6
+    Serial.println(analogRead(A6)); //read the analog value of A6
 
-if (analogRead(A6) \< 700) { //determine if the analog value of A6 is less than
-00
+    if (analogRead(A6) \< 700) { //determine if the analog value of A6 is less than
+    00
 
-tone(6,392); //the analog value of A6 is 392
+    tone(6,392); //the analog value of A6 is 392
 
-delay(125); //delay
+    delay(125); //delay
 
-tone(6,392);
+    tone(6,392);
 
-digitalWrite(12,HIGH); //digital 12 outputs high levels
+    digitalWrite(12,HIGH); //digital 12 outputs high levels
 
-delay(125);
+    delay(125);
 
-tone(6,440);
+    tone(6,440);
 
-digitalWrite(12,LOW); //digital 12 outputs low levels
+    digitalWrite(12,LOW); //digital 12 outputs low levels
 
-delay(250);
+    delay(250);
 
-tone(6,392);
+    tone(6,392);
 
-digitalWrite(12,HIGH);
+    digitalWrite(12,HIGH);
 
-delay(250);
+    delay(250);
 
-tone(6,532);
+    tone(6,532);
 
-digitalWrite(12,LOW);
+    digitalWrite(12,LOW);
 
-delay(250);
+    delay(250);
 
-tone(6,494);
+    tone(6,494);
 
-delay(500);
+    delay(500);
 
-tone(6,392);
+    tone(6,392);
 
-digitalWrite(12,HIGH);
+    digitalWrite(12,HIGH);
 
-delay(125);
+    delay(125);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,440);
+    tone(6,440);
 
-digitalWrite(12,LOW);
+    digitalWrite(12,LOW);
 
-delay(250);
+    delay(250);
 
-tone(6,392);
+    tone(6,392);
 
-digitalWrite(12,HIGH);
+    digitalWrite(12,HIGH);
 
-delay(250);
+    delay(250);
 
-tone(6,587);
+    tone(6,587);
 
-digitalWrite(12,LOW);
+    digitalWrite(12,LOW);
 
-delay(250);
+    delay(250);
 
-tone(6,532);
+    tone(6,532);
 
-delay(500);
+    delay(500);
 
-tone(6,392);
+    tone(6,392);
 
-digitalWrite(12,HIGH);
+    digitalWrite(12,HIGH);
 
-delay(125);
+    delay(125);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,784);
+    tone(6,784);
 
-digitalWrite(12,LOW);
+    digitalWrite(12,LOW);
 
-delay(250);
+    delay(250);
 
-tone(6,659);
+    tone(6,659);
 
-delay(250);
+    delay(250);
 
-tone(6,532);
+    tone(6,532);
 
-delay(250);
+    delay(250);
 
-tone(6,494);
+    tone(6,494);
 
-digitalWrite(12,HIGH);
+    digitalWrite(12,HIGH);
 
-delay(250);
+    delay(250);
 
-tone(6,440);
+    tone(6,440);
 
-delay(250);
+    delay(250);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-digitalWrite(12,LOW);
+    digitalWrite(12,LOW);
 
-tone(6,392);
+    tone(6,392);
 
-delay(125);
+    delay(125);
 
-tone(6,330);
+    tone(6,330);
 
-delay(250);
+    delay(250);
 
-tone(6,262);
+    tone(6,262);
 
-digitalWrite(12,HIGH);
+    digitalWrite(12,HIGH);
 
-delay(250);
+    delay(250);
 
-tone(6,587);
+    tone(6,587);
 
-delay(250);
+    delay(250);
 
-tone(6,532);
+    tone(6,532);
 
-delay(500);
+    delay(500);
 
-noTone(6);
+    noTone(6);
 
-digitalWrite(12,LOW);
+    digitalWrite(12,LOW);
 
-}
+    }
 
-if (analogRead(A6) \> 750) {
+    if (analogRead(A6) \> 750) {
 
-digitalWrite(12,LOW);
+    digitalWrite(12,LOW);
 
-noTone(6);
+    noTone(6);
 
-}
+    }
 
-}
+    }
 
 Test Result：
 
@@ -845,79 +845,79 @@ C.Compile and upload the test code through Arduino IDE.
 
 Test Code：
 
-volatile int distance;
+    volatile int distance;
 
-float checkdistance_2_3() {
+    float checkdistance_2_3() {
 
-digitalWrite(2, LOW);
+    digitalWrite(2, LOW);
 
-delayMicroseconds(2);
+    delayMicroseconds(2);
 
-digitalWrite(2, HIGH);
+    digitalWrite(2, HIGH);
 
-delayMicroseconds(10);
+    delayMicroseconds(10);
 
-digitalWrite(2, LOW);
+    digitalWrite(2, LOW);
 
-float distance = pulseIn(3, HIGH) / 58.00;
+    float distance = pulseIn(3, HIGH) / 58.00;
 
-delay(10);
+    delay(10);
 
-return distance;
+    return distance;
 
-}
+    }
 
-void setup(){
+    void setup(){
 
-Serial.begin(9600);
+    Serial.begin(9600);
 
-distance = 0;
+    distance = 0;
 
-pinMode(2, OUTPUT);
+    pinMode(2, OUTPUT);
 
-pinMode(3, INPUT);
+    pinMode(3, INPUT);
 
-pinMode(6, OUTPUT);
+    pinMode(6, OUTPUT);
 
-pinMode(7, OUTPUT);
+    pinMode(7, OUTPUT);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-distance = checkdistance_2_3();
+    distance = checkdistance_2_3();
 
-Serial.println(distance);
+    Serial.println(distance);
 
-if (distance \> 0 && distance \< 8) {
+    if (distance \> 0 && distance \< 8) {
 
-tone(6,532);
+    tone(6,532);
 
-tone(7,532);
+    tone(7,532);
 
-delay(250);
+    delay(250);
 
-noTone(6);
+    noTone(6);
 
-noTone(7);
+    noTone(7);
 
-delay(250);
+    delay(250);
 
-tone(6,532);
+    tone(6,532);
 
-tone(7,532);
+    tone(7,532);
 
-delay(250);
+    delay(250);
 
-noTone(6);
+    noTone(6);
 
-noTone(7);
+    noTone(7);
 
-delay(1000);
+    delay(1000);
 
-}
+    }
 
-}
+    }
 
 Test Results：
 
@@ -973,46 +973,42 @@ Upload test code on Arduino IDE
 
 Test Code：
 
-volatile int num; //define as num
+    volatile int num; //define as num
 
-void setup(){
+    void setup(){
 
-num = 0; //set num to 0
+    num = 0; //set num to 0
 
-Serial.begin(9600); //set baud rate to 9600
+    Serial.begin(9600); //set baud rate to 9600
 
-pinMode(12, INPUT); //set digital 12 to INPUT
+    pinMode(12, INPUT); //set digital 12 to INPUT
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-if (digitalRead(12) == 0) { //if digital 12 is low level or not delay(10);
-//delay in 10ms to stop the button from shaking
+    if (digitalRead(12) == 0) { //if digital 12 is low level or not delay(10);
+    //delay in 10ms to stop the button from shaking
 
-if (digitalRead(12) == 0) {
+    if (digitalRead(12) == 0) {
 
-delay(200);
+    delay(200);
 
-if (digitalRead(12) == 1) { //if digital 12 is equal to high level or not
+    if (digitalRead(12) == 1) { //if digital 12 is equal to high level or not
 
-delay(10); //delay in 10ms to stop the button from shaking
+    delay(10); //delay in 10ms to stop the button from shaking
 
-if (digitalRead(12) == 1) {
+    if (digitalRead(12) == 1) {
 
-num = num + 1; //display how many times the button is pressed
+    num = num + 1; //display how many times the button is pressed
 
-Serial.println(num); //display how many times the button is pressed
+    Serial.println(num); //display how many times the button is pressed
 
-}
-
-}
-
-}
-
-}
-
-}
+  }
+   }
+    }
+     }
+      }
 
 Test Result：
 
@@ -1108,77 +1104,77 @@ be taken as analog ones.
 
 Test Code：
 
-void setup(){
+    void setup(){
 
-pinMode(8, OUTPUT);
+    pinMode(8, OUTPUT);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-//Move forward
+    //Move forward
 
-digitalWrite(8,LOW);
+    digitalWrite(8,LOW);
 
-digitalWrite(A1,LOW);
+    digitalWrite(A1,LOW);
 
-analogWrite(9,200);
+    analogWrite(9,200);
 
-analogWrite(10,201);
+    analogWrite(10,201);
 
-delay(3000);
+    delay(3000);
 
-//Move backwards
+    //Move backwards
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,196);
+    analogWrite(9,196);
 
-analogWrite(10,200);
+    analogWrite(10,200);
 
-delay(3000);
+    delay(3000);
 
-//Stop
+    //Stop
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,0);
+    analogWrite(9,0);
 
-analogWrite(10,0);
+    analogWrite(10,0);
 
-delay(3000);
+    delay(3000);
 
-//Turn left
+    //Turn left
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-digitalWrite(A1,LOW);
+    digitalWrite(A1,LOW);
 
-analogWrite(9,100);
+    analogWrite(9,100);
 
-analogWrite(10,100);
+    analogWrite(10,100);
 
-delay(2000);
+    delay(2000);
 
-//Turn right
+    //Turn right
 
-digitalWrite(8,LOW);
+    digitalWrite(8,LOW);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,100);
+    analogWrite(9,100);
 
-analogWrite(10,100);
+    analogWrite(10,100);
 
-delay(2000);
+    delay(2000);
 
-}
+    }
 
 Test Results：
 
@@ -1198,77 +1194,77 @@ Extension Project：
 
 Now,let’s control the speed of the motor by PMW.
 
-void setup(){
+    void setup(){
 
-pinMode(8, OUTPUT);
+    pinMode(8, OUTPUT);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-//Move forward
+    //Move forward
 
-digitalWrite(8,LOW);
+    digitalWrite(8,LOW);
 
-digitalWrite(A1,LOW);
+    digitalWrite(A1,LOW);
 
-analogWrite(9,200);
+    analogWrite(9,200);
 
-analogWrite(10,200);
+    analogWrite(10,200);
 
-delay(3000);
+    delay(3000);
 
-//Move backwards
+    //Move backwards
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,194);
+    analogWrite(9,194);
 
-analogWrite(10,200);
+    analogWrite(10,200);
 
-delay(3000);
+    delay(3000);
 
-//Stop
+    //Stop
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,0);
+    analogWrite(9,0);
 
-analogWrite(10,0);
+    analogWrite(10,0);
 
-delay(3000);
+    delay(3000);
 
-//Turn left
+    //Turn left
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-digitalWrite(A1,LOW);
+    digitalWrite(A1,LOW);
 
-analogWrite(9,120);
+    analogWrite(9,120);
 
-analogWrite(10,120);
+    analogWrite(10,120);
 
-delay(2000);
+    delay(2000);
 
-//Turn right
+    //Turn right
 
-digitalWrite(8,LOW);
+    digitalWrite(8,LOW);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,120);
+    analogWrite(9,120);
 
-analogWrite(10,120);
+    analogWrite(10,120);
 
-delay(2000);
+    delay(2000);
 
-}
+    }
 
 //\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
@@ -1385,241 +1381,241 @@ Test Code：
 
 Code 1：
 
-\#include \<Matrix.h\>
+    \#include \<Matrix.h\>
 
-Matrix myMatrix(A4,A5); //create myMatrix and define communication pin
+    Matrix myMatrix(A4,A5); //create myMatrix and define communication pin
 
-void setup(){
+    void setup(){
 
-myMatrix.begin(0x70);
+    myMatrix.begin(0x70);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.drawStr("hello!");
+    myMatrix.drawStr("hello!");
 
-}
+    }
 
-Upload the above code, the yellow robot shows“hello!”
+    Upload the above code, the yellow robot shows“hello!”
 
-Code 2：
+    Code 2：
 
-\#include \<Matrix.h\>
+    \#include \<Matrix.h\>
 
-Matrix myMatrix(A4,A5); //create myMatrix and define communication pin
+    Matrix myMatrix(A4,A5); //create myMatrix and define communication pin
 
-uint8_t LedArray1[8]={0xff,0x81,0xbd,0xa5,0xa5,0xbd,0x81,0xff};
+    uint8_t LedArray1[8]={0xff,0x81,0xbd,0xa5,0xa5,0xbd,0x81,0xff};
 
-uint8_t LEDArray[8];
+    uint8_t LEDArray[8];
 
-void setup(){
+    void setup(){
 
-myMatrix.begin(0x70);
+    myMatrix.begin(0x70);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-myMatrix.clear();
+    myMatrix.clear();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray1[i];
+    LEDArray[i]=LedArray1[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-}
+    }
 
 Upload the above code, the yellow robot displays a concentric square,
 
 Code 3：
 
-\#include \<Matrix.h\>
+    \#include \<Matrix.h\>
 
-Matrix myMatrix(A4,A5); // //create myMatrix and define communication pins
+    Matrix myMatrix(A4,A5); // //create myMatrix and define communication pins
 
-uint8_t LedArray1[8]={0x18,0x18,0x18,0x18,0x99,0x5a,0x3c,0x18};
+    uint8_t LedArray1[8]={0x18,0x18,0x18,0x18,0x99,0x5a,0x3c,0x18};
 
-uint8_t LEDArray[8]; //define a array variable without initial value
+    uint8_t LEDArray[8]; //define a array variable without initial value
 
-uint8_t LedArray2[8]={0x10,0x20,0x40,0xff,0xff,0x40,0x20,0x10};
+    uint8_t LedArray2[8]={0x10,0x20,0x40,0xff,0xff,0x40,0x20,0x10};
 
-uint8_t LedArray3[8]={0x18,0x3c,0x5a,0x99,0x18,0x18,0x18,0x18};
+    uint8_t LedArray3[8]={0x18,0x3c,0x5a,0x99,0x18,0x18,0x18,0x18};
 
-uint8_t LedArray4[8]={0x08,0x04,0x02,0xff,0xff,0x02,0x04,0x08};
+    uint8_t LedArray4[8]={0x08,0x04,0x02,0xff,0xff,0x02,0x04,0x08};
 
-uint8_t LedArray5[8]={0x00,0x18,0x24,0x00,0x00,0xa5,0xa5,0x42};
+    uint8_t LedArray5[8]={0x00,0x18,0x24,0x00,0x00,0xa5,0xa5,0x42};
 
-void setup(){
+    void setup(){
 
-myMatrix.begin(0x70);
+    myMatrix.begin(0x70);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-myMatrix.clear();
+    myMatrix.clear();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray1[i];
+    LEDArray[i]=LedArray1[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1); //Light the corresponding point
+    myMatrix.drawPixel(j, i,1); //Light the corresponding point
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(1000);
+    delay(1000);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray2[i];
+    LEDArray[i]=LedArray2[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(1000);
+    delay(1000);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray3[i];
+    LEDArray[i]=LedArray3[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(1000);
+    delay(1000);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray4[i];
+    LEDArray[i]=LedArray4[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(1000);
+    delay(1000);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray5[i];
+    LEDArray[i]=LedArray5[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(1000);
+    delay(1000);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-}
+    }
 
 Upload code, the yellow robot will show arrow up,down, leftward and rightward
 and smile image, circularly.
@@ -1656,205 +1652,205 @@ Test Code：
 Pin Trig (trigger signal input) and pin Echo are connected to digital 2 and 3 of
 the yellow robot.
 
-volatile int distance;
+    volatile int distance;
 
-volatile int distance1;
+    volatile int distance1;
 
-volatile int distance2;
+    volatile int distance2;
 
-void Stop() { //stop
+    void Stop() { //stop
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,0);
+    analogWrite(9,0);
 
-analogWrite(10,0);
+    analogWrite(10,0);
 
-}
+    }
 
-void left() { //turn left
+    void left() { //turn left
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-digitalWrite(A1,LOW);
+    digitalWrite(A1,LOW);
 
-analogWrite(9,120);
+    analogWrite(9,120);
 
-analogWrite(10,120);
+    analogWrite(10,120);
 
-}
+    }
 
-float checkdistance_2_3() { //ultrasonic ranging
+    float checkdistance_2_3() { //ultrasonic ranging
 
-digitalWrite(2, LOW); //Set pin 2 to low level
+    digitalWrite(2, LOW); //Set pin 2 to low level
 
-delayMicroseconds(2); //delay in 2ms
+    delayMicroseconds(2); //delay in 2ms
 
-digitalWrite(2, HIGH); //Set pin 2 to high level
+    digitalWrite(2, HIGH); //Set pin 2 to high level
 
-delayMicroseconds(10); //delay in 10ms
+    delayMicroseconds(10); //delay in 10ms
 
-digitalWrite(2, LOW);
+    digitalWrite(2, LOW);
 
-float distance = pulseIn(3, HIGH) / 58.00; //calculate distance
+    float distance = pulseIn(3, HIGH) / 58.00; //calculate distance
 
-delay(10);
+    delay(10);
 
-return distance;
+    return distance;
 
-}
+    }
 
-void back() { //go back
+    void back() { //go back
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,150);
+    analogWrite(9,150);
 
-analogWrite(10,150);
+    analogWrite(10,150);
 
-}
+    }
 
-void buzzer() { //the code of buzzer
+    void buzzer() { //the code of buzzer
 
-tone(6,532);
+    tone(6,532);
 
-tone(7,532);
+    tone(7,532);
 
-delay(250);
+    delay(250);
 
-noTone(6);
+    noTone(6);
 
-noTone(7);
+    noTone(7);
 
-delay(250);
+    delay(250);
 
-tone(6,532);
+    tone(6,532);
 
-tone(7,532);
+    tone(7,532);
 
-delay(250);
+    delay(250);
 
-noTone(6);
+    noTone(6);
 
-noTone(7);
+    noTone(7);
 
-delay(1000);
+    delay(1000);
 
-}
+    }
 
-void front() { //go forward
+    void front() { //go forward
 
-digitalWrite(8,LOW);
+    digitalWrite(8,LOW);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-digitalWrite(A1,LOW);
+    digitalWrite(A1,LOW);
 
-analogWrite(9,150);
+    analogWrite(9,150);
 
-analogWrite(10,150);
+    analogWrite(10,150);
 
-}
+    }
 
-void right() { //turn right
+    void right() { //turn right
 
-digitalWrite(8,LOW);
+    digitalWrite(8,LOW);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,120);
+    analogWrite(9,120);
 
-analogWrite(10,120);
+    analogWrite(10,120);
 
-}
+    }
 
-void setup(){
+    void setup(){
 
-Serial.begin(9600);
+    Serial.begin(9600);
 
-distance = 0;
+    distance = 0;
 
-distance1 = 0;
+    distance1 = 0;
 
-distance2 = 0;
+    distance2 = 0;
 
-pinMode(8, OUTPUT);
+    pinMode(8, OUTPUT);
 
-pinMode(2, OUTPUT);
+    pinMode(2, OUTPUT);
 
-pinMode(3, INPUT);
+    pinMode(3, INPUT);
 
-pinMode(6, OUTPUT);
+    pinMode(6, OUTPUT);
 
-pinMode(7, OUTPUT);
+    pinMode(7, OUTPUT);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-distance = checkdistance_2_3(); //define distance value as distance
+    distance = checkdistance_2_3(); //define distance value as distance
 
-if (distance \< 15) { //determine the distance is less than 15cm or not
+    if (distance \< 15) { //determine the distance is less than 15cm or not
 
-Stop();
+    Stop();
 
-buzzer();
+    buzzer();
 
-delay(1000);
+    delay(1000);
 
-left();
+    left();
 
-delay(380);
+    delay(380);
 
-Stop();
+    Stop();
 
-distance1 = checkdistance_2_3();
+    distance1 = checkdistance_2_3();
 
-delay(1000);
+    delay(1000);
 
-right();
+    right();
 
-delay(750);
+    delay(750);
 
-Stop();
+    Stop();
 
-distance2 = checkdistance_2_3();
+    distance2 = checkdistance_2_3();
 
-delay(1000);
+    delay(1000);
 
-if (distance1 \> distance2) {
+    if (distance1 \> distance2) {
 
-left();
+    left();
 
-delay(750);
+    delay(750);
 
-front();
+    front();
 
-} else {
+    } else {
 
-front();
+    front();
 
-}
+    }
 
-} else {
+    } else {
 
-front();
+    front();
 
-}
+    }
 
-}
+    }
 
 Test Result：
 
@@ -1906,135 +1902,135 @@ Arduino IDE
 
 Test Code：
 
-\#include \<Matrix.h\>
+    \#include \<Matrix.h\>
 
-Matrix myMatrix(A4,A5);
+    Matrix myMatrix(A4,A5);
 
-uint8_t LedArray1[8]={0xff,0x81,0xbd,0xa5,0xa5,0xbd,0x81,0xff};
+    uint8_t LedArray1[8]={0xff,0x81,0xbd,0xa5,0xa5,0xbd,0x81,0xff};
 
-//Array, used to store the data of pattern, can be calculated by yourself or
-obtained from the modulus tool
+    //Array, used to store the data of pattern, can be calculated by yourself or
+    obtained from the modulus tool
 
-uint8_t LEDArray[8];
+    uint8_t LEDArray[8];
 
-void left() { //the status of left turning
+    void left() { //the status of left turning
 
-digitalWrite(8,HIGH); //left motor rotates anticlockwise
+    digitalWrite(8,HIGH); //left motor rotates anticlockwise
 
-digitalWrite(A1,LOW); //right motor rotates clockwise
+    digitalWrite(A1,LOW); //right motor rotates clockwise
 
-analogWrite(9,100); //set the speed of the left motor to 100
+    analogWrite(9,100); //set the speed of the left motor to 100
 
-analogWrite(10,100); //set the speed of the right motor to 100
+    analogWrite(10,100); //set the speed of the right motor to 100
 
-}
+    }
 
-void Stop() { //stop status
+    void Stop() { //stop status
 
-digitalWrite(8,HIGH); //left motor rotates anticlockwise
+    digitalWrite(8,HIGH); //left motor rotates anticlockwise
 
-digitalWrite(A1,HIGH); //right motor rotates clockwise
+    digitalWrite(A1,HIGH); //right motor rotates clockwise
 
-analogWrite(9,0); //set the speed of the left motor to 0
+    analogWrite(9,0); //set the speed of the left motor to 0
 
-analogWrite(10,0); //set the speed of the right motor to 0
+    analogWrite(10,0); //set the speed of the right motor to 0
 
-}
+    }
 
-void right() { //the status of right-turning
+    void right() { //the status of right-turning
 
-digitalWrite(8,LOW); //left motor rotates clockwise
+    digitalWrite(8,LOW); //left motor rotates clockwise
 
-digitalWrite(A1,HIGH); //right motor rotates anticlockwise
+    digitalWrite(A1,HIGH); //right motor rotates anticlockwise
 
-analogWrite(9,102); //set the speed of the left motor to 102
+    analogWrite(9,102); //set the speed of the left motor to 102
 
-analogWrite(10,102); //set the speed of the right motor to 102
+    analogWrite(10,102); //set the speed of the right motor to 102
 
-}
+    }
 
-void front() { //the status of going forward
+    void front() { //the status of going forward
 
-digitalWrite(8,LOW); //left motor rotates clockwise
+    digitalWrite(8,LOW); //left motor rotates clockwise
 
-digitalWrite(A1,LOW); //right motor rotates clockwise analogWrite(9,150); //set
-the speed of the left motor to 150
+    digitalWrite(A1,LOW); //right motor rotates clockwise analogWrite(9,150); //set
+    the speed of the left motor to 150
 
-analogWrite(10,150); //set the speed of the right motor to 150
+    analogWrite(10,150); //set the speed of the right motor to 150
 
-}
+    }
 
-void setup(){
+    void setup(){
 
-Serial.begin(9600);
+    Serial.begin(9600);
 
-myMatrix.begin(0x70);
+    myMatrix.begin(0x70);
 
-myMatrix.clear(); //clear screen
+    myMatrix.clear(); //clear screen
 
-delay(1000); //delay
+    delay(1000); //delay
 
-for(int i=0; i\<8; i++) //Every character has 8 bits
+    for(int i=0; i\<8; i++) //Every character has 8 bits
 
-{
+    {
 
-LEDArray[i]=LedArray1[i];
+    LEDArray[i]=LedArray1[i];
 
-for(int j=7; j\>=0; j--) //Every character has 8 bits
+    for(int j=7; j\>=0; j--) //Every character has 8 bits
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0) //
+    if((LEDArray[i]&0x01)\>0) //
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1; //detect bit by bit and make data move one bit
-rightward
+    LEDArray[i] = LEDArray[i]\>\>1; //detect bit by bit and make data move one bit
+    rightward
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-pinMode(8, OUTPUT);
+    pinMode(8, OUTPUT);
 
-pinMode(4, INPUT);
+    pinMode(4, INPUT);
 
-pinMode(5, INPUT);
+    pinMode(5, INPUT);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-Serial.println(digitalRead(4));
+    Serial.println(digitalRead(4));
 
-Serial.println(digitalRead(5));
+    Serial.println(digitalRead(5));
 
-if (digitalRead(4) == 0 && digitalRead(5) == 1) { //if only left sensor detects
-the black line
+    if (digitalRead(4) == 0 && digitalRead(5) == 1) { //if only left sensor detects
+    the black line
 
-left(); //robot turns left
+    left(); //robot turns left
 
-} else if (digitalRead(4) == 1 && digitalRead(5) == 0) { //if only right sensor
-detects the black line
+    } else if (digitalRead(4) == 1 && digitalRead(5) == 0) { //if only right sensor
+    detects the black line
 
-right(); //smart robot turns right
+    right(); //smart robot turns right
 
-} else if (digitalRead(4) == 1 && digitalRead(5) == 1) {//if the don’t detect
-the black line
+    } else if (digitalRead(4) == 1 && digitalRead(5) == 1) {//if the don’t detect
+    the black line
 
-Stop(); //smart car stops
+    Stop(); //smart car stops
 
-} else {
+    } else {
 
-front();
+    front();
 
-}
+    }
 
-}
+    }
 
 (4) Test Result：
 
@@ -2117,263 +2113,263 @@ Upload test code on Arduino IDE
 
 Test Code：
 
-\#include \<Matrix.h\>
+    \#include \<Matrix.h\>
 
-Matrix myMatrix(A4,A5);
+    Matrix myMatrix(A4,A5);
 
-uint8_t LedArray1[8]={0xff,0x81,0x81,0x81,0x81,0x81,0x81,0xff};
+    uint8_t LedArray1[8]={0xff,0x81,0x81,0x81,0x81,0x81,0x81,0xff};
 
-uint8_t LEDArray[8];
+    uint8_t LEDArray[8];
 
-uint8_t LedArray2[8]={0x00,0x7e,0x42,0x42,0x42,0x42,0x7e,0x00};
+    uint8_t LedArray2[8]={0x00,0x7e,0x42,0x42,0x42,0x42,0x7e,0x00};
 
-uint8_t LedArray3[8]={0x00,0x00,0x3c,0x24,0x24,0x3c,0x00,0x00};
+    uint8_t LedArray3[8]={0x00,0x00,0x3c,0x24,0x24,0x3c,0x00,0x00};
 
-uint8_t LedArray4[8]={0x00,0x00,0x00,0x18,0x18,0x00,0x00,0x00};
+    uint8_t LedArray4[8]={0x00,0x00,0x00,0x18,0x18,0x00,0x00,0x00};
 
-uint8_t LedArray5[8]={0x00,0x00,0x3c,0x24,0x24,0x3c,0x00,0x00};
+    uint8_t LedArray5[8]={0x00,0x00,0x3c,0x24,0x24,0x3c,0x00,0x00};
 
-uint8_t LedArray6[8]={0x00,0x7e,0x42,0x42,0x42,0x42,0x7e,0x00};
+    uint8_t LedArray6[8]={0x00,0x7e,0x42,0x42,0x42,0x42,0x7e,0x00};
 
-uint8_t LedArray7[8]={0xff,0x81,0x81,0x81,0x81,0x81,0x81,0xff};
+    uint8_t LedArray7[8]={0xff,0x81,0x81,0x81,0x81,0x81,0x81,0xff};
 
-//The square on the modulus tool gradually becomes smaller
+    //The square on the modulus tool gradually becomes smaller
 
-void setup(){
+    void setup(){
 
-Serial.begin(9600);
+    Serial.begin(9600);
 
-myMatrix.begin(0x70);
+    myMatrix.begin(0x70);
 
-myMatrix.clear(); //Clear screen
+    myMatrix.clear(); //Clear screen
 
-pinMode(12, INPUT);
+    pinMode(12, INPUT);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-Serial.println(digitalRead(12));
+    Serial.println(digitalRead(12));
 
-if (digitalRead(12) == 1) { //if there is someone nearby myMatrix.clear();
+    if (digitalRead(12) == 1) { //if there is someone nearby myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for (int i = 0; i \<= 8; i = i + (1)) {
+    for (int i = 0; i \<= 8; i = i + (1)) {
 
-for (int j = 0; j \<= 8; j = j + (1)) {
+    for (int j = 0; j \<= 8; j = j + (1)) {
 
-myMatrix.drawPixel(i-1,j-1,1);
+    myMatrix.drawPixel(i-1,j-1,1);
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(100);
+    delay(100);
 
-}
+    }
 
-}
+    }
 
-} else { //otherwise
+    } else { //otherwise
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray1[i];
+    LEDArray[i]=LedArray1[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(200);
+    delay(200);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray2[i];
+    LEDArray[i]=LedArray2[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(200);
+    delay(200);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray3[i];
+    LEDArray[i]=LedArray3[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(200);
+    delay(200);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray4[i];
+    LEDArray[i]=LedArray4[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(200);
+    delay(200);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray5[i];
+    LEDArray[i]=LedArray5[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(200);
+    delay(200);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray6[i];
+    LEDArray[i]=LedArray6[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(200);
+    delay(200);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray7[i];
+    LEDArray[i]=LedArray7[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-delay(200);
+    delay(200);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-}
+    }
 
-}
+    }
 
 Test Result：
 
@@ -2433,228 +2429,228 @@ Need to fully charge the yellow robot if you continue further experiments.
 
 Clap your hands or make sounds with 5cm away from sound sensor.
 
-\#include \<Matrix.h\>
+    \#include \<Matrix.h\>
 
-Matrix myMatrix(A4, A5); //create myMatrix and define communication pins
+    Matrix myMatrix(A4, A5); //create myMatrix and define communication pins
 
-volatile int distance; //ultrasonic ranging variable
+    volatile int distance; //ultrasonic ranging variable
 
-volatile int distance1;
+    volatile int distance1;
 
-volatile int distance2;
+    volatile int distance2;
 
-int sensorVal;
+    int sensorVal;
 
-uint8_t LedArray1[8] = {0x00, 0x18, 0x24, 0x00, 0x00, 0xa5, 0xa5, 0x42};
+    uint8_t LedArray1[8] = {0x00, 0x18, 0x24, 0x00, 0x00, 0xa5, 0xa5, 0x42};
 
-uint8_t LEDArray[8]; //define a array variable without initial value
+    uint8_t LEDArray[8]; //define a array variable without initial value
 
-void front() { //go front
+    void front() { //go front
 
-digitalWrite(8, LOW);
+    digitalWrite(8, LOW);
 
-digitalWrite(A1, LOW);
+    digitalWrite(A1, LOW);
 
-analogWrite(9, 150);
+    analogWrite(9, 150);
 
-analogWrite(10, 150);
+    analogWrite(10, 150);
 
-}
+    }
 
-void back() { //go back
+    void back() { //go back
 
-digitalWrite(8, HIGH);
+    digitalWrite(8, HIGH);
 
-digitalWrite(A1, HIGH);
+    digitalWrite(A1, HIGH);
 
-analogWrite(9, 150);
+    analogWrite(9, 150);
 
-analogWrite(10, 150);
+    analogWrite(10, 150);
 
-}
+    }
 
-void Stop() { //stop
+    void Stop() { //stop
 
-digitalWrite(8, HIGH);
+    digitalWrite(8, HIGH);
 
-digitalWrite(A1, HIGH);
+    digitalWrite(A1, HIGH);
 
-analogWrite(9, 0);
+    analogWrite(9, 0);
 
-analogWrite(10, 0);
+    analogWrite(10, 0);
 
-}
+    }
 
-float checkdistance_2_3() { //ultrasonic ranging code
+    float checkdistance_2_3() { //ultrasonic ranging code
 
-digitalWrite(2, LOW);
+    digitalWrite(2, LOW);
 
-delayMicroseconds(2);
+    delayMicroseconds(2);
 
-digitalWrite(2, HIGH);
+    digitalWrite(2, HIGH);
 
-delayMicroseconds(10);
+    delayMicroseconds(10);
 
-digitalWrite(2, LOW);
+    digitalWrite(2, LOW);
 
-float distance = pulseIn(3, HIGH) / 58.00; //calculate distance
+    float distance = pulseIn(3, HIGH) / 58.00; //calculate distance
 
-delay(10);
+    delay(10);
 
-return distance;
+    return distance;
 
-}
+    }
 
-void left() { //code of left turning
+    void left() { //code of left turning
 
-digitalWrite(8, HIGH);
+    digitalWrite(8, HIGH);
 
-digitalWrite(A1, LOW);
+    digitalWrite(A1, LOW);
 
-analogWrite(9, 140);
+    analogWrite(9, 140);
 
-analogWrite(10, 140);
+    analogWrite(10, 140);
 
-}
+    }
 
-void right() { //the code of right turning
+    void right() { //the code of right turning
 
-digitalWrite(8, LOW);
+    digitalWrite(8, LOW);
 
-digitalWrite(A1, HIGH);
+    digitalWrite(A1, HIGH);
 
-analogWrite(9, 140);
+    analogWrite(9, 140);
 
-analogWrite(10, 140);
+    analogWrite(10, 140);
 
-}
+    }
 
-void avoid(){
+    void avoid(){
 
-distance = checkdistance_2_3(); //set the detected value to distance
+    distance = checkdistance_2_3(); //set the detected value to distance
 
-if(distance \< 15&&distance \>0){
+    if(distance \< 15&&distance \>0){
 
-Stop(); //stop
+    Stop(); //stop
 
-left(); //turn left
+    left(); //turn left
 
-delay(380); //delay in 380ms
+    delay(380); //delay in 380ms
 
-Stop();
+    Stop();
 
-distance1 = checkdistance_2_3(); //set the detected value to distance1
+    distance1 = checkdistance_2_3(); //set the detected value to distance1
 
-delay(300); //delay in 300ms
+    delay(300); //delay in 300ms
 
-right(); //turn right
+    right(); //turn right
 
-delay(750); //delay in 750ms
+    delay(750); //delay in 750ms
 
-Stop(); //stop
+    Stop(); //stop
 
-distance2 = checkdistance_2_3(); //set the detected value to distance2
+    distance2 = checkdistance_2_3(); //set the detected value to distance2
 
-delay(300);
+    delay(300);
 
-if (distance1 \> distance2) { //if left distance value is more than the right
-one
+    if (distance1 \> distance2) { //if left distance value is more than the right
+    one
 
-left();
+    left();
 
-delay(750);
+    delay(750);
 
-front();
+    front();
 
-}else{
+    }else{
 
-front();
+    front();
 
-}
+    }
 
-}
+    }
 
-else{
+    else{
 
-front();
+    front();
 
-}
+    }
 
-}
+    }
 
-void setup() {
+    void setup() {
 
-Serial.begin(9600);
+    Serial.begin(9600);
 
-pinMode(8, OUTPUT); //define pin8 as OUTPUT
+    pinMode(8, OUTPUT); //define pin8 as OUTPUT
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-pinMode(2, OUTPUT);
+    pinMode(2, OUTPUT);
 
-pinMode(3, INPUT); //define pin3 as INPUT
+    pinMode(3, INPUT); //define pin3 as INPUT
 
-distance = 0;
+    distance = 0;
 
-distance1 = 0;
+    distance1 = 0;
 
-distance2 = 0;
+    distance2 = 0;
 
-myMatrix.begin(0x70);
+    myMatrix.begin(0x70);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-delay(1000);
+    delay(1000);
 
-for (int i = 0; i \< 8; i++)
+    for (int i = 0; i \< 8; i++)
 
-{
+    {
 
-LEDArray[i] = LedArray1[i];
+    LEDArray[i] = LedArray1[i];
 
-for (int j = 7; j \>= 0; j--)
+    for (int j = 7; j \>= 0; j--)
 
-{
+    {
 
-if ((LEDArray[i] & 0x01) \> 0)
+    if ((LEDArray[i] & 0x01) \> 0)
 
-myMatrix.drawPixel(j, i, 1);
+    myMatrix.drawPixel(j, i, 1);
 
-LEDArray[i] = LEDArray[i] \>\> 1;
+    LEDArray[i] = LEDArray[i] \>\> 1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-}
+    }
 
-void loop() {
+    void loop() {
 
-sensorVal = analogRead(A0);
+    sensorVal = analogRead(A0);
 
-Serial.println(sensorVal);
+    Serial.println(sensorVal);
 
-if(sensorVal \> 150){
+    if(sensorVal \> 150){
 
-for(int i=0;i\<10;i++){
+    for(int i=0;i\<10;i++){
 
-avoid();
+    avoid();
 
-delay(10);
+    delay(10);
 
-}
+    }
 
-}
+    }
 
-else{
+    else{
 
-Stop();
+    Stop();
 
-}
+    }
 
-}
+    }
 
 Test Result：
 
@@ -2711,28 +2707,28 @@ Upload test code on Arduino IDE.
 
 Test Code：
 
-char ble_val; //Character variable, used to store the value received by
-Bluetooth
+    char ble_val; //Character variable, used to store the value received by
+    Bluetooth
 
-void setup() {
+    void setup() {
 
-Serial.begin(9600);
+    Serial.begin(9600);
 
-}
+    }
 
-void loop() {
+    void loop() {
 
-if (Serial.available() \> 0) //determine if there is data in the serial buffer
+    if (Serial.available() \> 0) //determine if there is data in the serial buffer
 
-{
+    {
 
-ble_val = Serial.read(); //ead the data in serial buffer
+    ble_val = Serial.read(); //ead the data in serial buffer
 
-Serial.println(ble_val); //print
+    Serial.println(ble_val); //print
 
-}
+    }
 
-}
+    }
 
 //\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
@@ -2785,55 +2781,55 @@ We can connect an LED to the yellow robot and control the LED via App.
 
 ![](media/7bea021ddac4afa931456ad99ed48d03.png)
 
-int ledpin = 12;
+    int ledpin = 12;
 
-void setup()
+    void setup()
 
-{
+    {
 
-Serial.begin(9600);
+    Serial.begin(9600);
 
-pinMode(ledpin, OUTPUT);
+    pinMode(ledpin, OUTPUT);
 
-}
+    }
 
-void loop()
+    void loop()
 
-{
+    {
 
-int i;
+    int i;
 
-if (Serial.available())
+    if (Serial.available())
 
-{
+    {
 
-i = Serial.read();
+    i = Serial.read();
 
-Serial.println("DATA RECEIVED:");
+    Serial.println("DATA RECEIVED:");
 
-if (i == 'B')
+    if (i == 'B')
 
-{
+    {
 
-digitalWrite(ledpin, HIGH);
+    digitalWrite(ledpin, HIGH);
 
-Serial.println("led on");
+    Serial.println("led on");
 
-}
+    }
 
-if (i == 'S')
+    if (i == 'S')
 
-{
+    {
 
-digitalWrite(ledpin, LOW);
+    digitalWrite(ledpin, LOW);
 
-Serial.println("led off");
+    Serial.println("led off");
 
-}
+    }
 
-}
+    }
 
-}
+    }
 
 //\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
 
@@ -2896,287 +2892,287 @@ Arduino IDE.
 
 Test Code：
 
-\#include \<Matrix.h\>
+    \#include \<Matrix.h\>
 
-volatile char val;
+    volatile char val;
 
-Matrix myMatrix(A4,A5);
+    Matrix myMatrix(A4,A5);
 
-void Front() {
+    void Front() {
 
-digitalWrite(8,LOW);
+    digitalWrite(8,LOW);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-digitalWrite(A1,LOW);
+    digitalWrite(A1,LOW);
 
-analogWrite(9,200);
+    analogWrite(9,200);
 
-analogWrite(10,200);
+    analogWrite(10,200);
 
-}
+    }
 
-void Back() {
+    void Back() {
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,194);
+    analogWrite(9,194);
 
-analogWrite(10,200);
+    analogWrite(10,200);
 
-}
+    }
 
-uint8_t LedArray1[8]={0x18,0x18,0x18,0x18,0x99,0x5a,0x3c,0x18};
+    uint8_t LedArray1[8]={0x18,0x18,0x18,0x18,0x99,0x5a,0x3c,0x18};
 
-uint8_t LEDArray[8];
+    uint8_t LEDArray[8];
 
-uint8_t LedArray2[8]={0x18,0x3c,0x5a,0x99,0x18,0x18,0x18,0x18};
+    uint8_t LedArray2[8]={0x18,0x3c,0x5a,0x99,0x18,0x18,0x18,0x18};
 
-uint8_t LedArray3[8]={0x08,0x04,0x02,0xff,0xff,0x02,0x04,0x08};
+    uint8_t LedArray3[8]={0x08,0x04,0x02,0xff,0xff,0x02,0x04,0x08};
 
-uint8_t LedArray4[8]={0x10,0x20,0x40,0xff,0xff,0x40,0x20,0x10};
+    uint8_t LedArray4[8]={0x10,0x20,0x40,0xff,0xff,0x40,0x20,0x10};
 
-uint8_t LedArray5[8]={0x18,0x18,0x00,0x18,0x18,0x18,0x18,0x18};
+    uint8_t LedArray5[8]={0x18,0x18,0x00,0x18,0x18,0x18,0x18,0x18};
 
-void Left() {
+    void Left() {
 
-digitalWrite(8,LOW);
+    digitalWrite(8,LOW);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-digitalWrite(A1,LOW);
+    digitalWrite(A1,LOW);
 
-analogWrite(9,120);
+    analogWrite(9,120);
 
-analogWrite(10,120);
+    analogWrite(10,120);
 
-}
+    }
 
-void Right() {
+    void Right() {
 
-digitalWrite(8,LOW);
+    digitalWrite(8,LOW);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-digitalWrite(A1,LOW);
+    digitalWrite(A1,LOW);
 
-analogWrite(9,120);
+    analogWrite(9,120);
 
-analogWrite(10,120);
+    analogWrite(10,120);
 
-}
+    }
 
-void Stop() {
+    void Stop() {
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,0);
+    analogWrite(9,0);
 
-analogWrite(10,0);
+    analogWrite(10,0);
 
-}
+    }
 
-void setup(){
+    void setup(){
 
-Serial.begin(9600);
+    Serial.begin(9600);
 
-val = 0;
+    val = 0;
 
-myMatrix.begin(0x70);
+    myMatrix.begin(0x70);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-pinMode(8, OUTPUT);
+    pinMode(8, OUTPUT);
 
-}
+    }
 
-void loop(){
+    void loop(){
 
-if (Serial.available() \> 0) {
+    if (Serial.available() \> 0) {
 
-val = Serial.read();
+    val = Serial.read();
 
-Serial.println(val);
+    Serial.println(val);
 
-}
+    }
 
-switch (val) {
+    switch (val) {
 
-case 'F':
+    case 'F':
 
-Front();
+    Front();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray1[i];
+    LEDArray[i]=LedArray1[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-break;
+    break;
 
-case 'B':
+    case 'B':
 
-Back();
+    Back();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray2[i];
+    LEDArray[i]=LedArray2[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-break;
+    break;
 
-case 'L':
+    case 'L':
 
-Left();
+    Left();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray3[i];
+    LEDArray[i]=LedArray3[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-break;
+    break;
 
-case 'R':
+    case 'R':
 
-Right();
+    Right();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray4[i];
+    LEDArray[i]=LedArray4[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-break;
+    break;
 
-case 'S':
+    case 'S':
 
-Stop();
+    Stop();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for(int i=0; i\<8; i++)
+    for(int i=0; i\<8; i++)
 
-{
+    {
 
-LEDArray[i]=LedArray5[i];
+    LEDArray[i]=LedArray5[i];
 
-for(int j=7; j\>=0; j--)
+    for(int j=7; j\>=0; j--)
 
-{
+    {
 
-if((LEDArray[i]&0x01)\>0)
+    if((LEDArray[i]&0x01)\>0)
 
-myMatrix.drawPixel(j, i,1);
+    myMatrix.drawPixel(j, i,1);
 
-LEDArray[i] = LEDArray[i]\>\>1;
+    LEDArray[i] = LEDArray[i]\>\>1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-break;
+    break;
 
-}
+    }
 
-}
+    }
 
 Test Result
 
@@ -3203,753 +3199,753 @@ Test Code：
 
 Turn off the BT switch before uploading test code
 
-\#include \<Matrix.h\>
+    \#include \<Matrix.h\>
 
-volatile char val;
+    volatile char val;
 
-volatile int distance1;
+    volatile int distance1;
 
-volatile int val_L;
+    volatile int val_L;
 
-volatile int val_R;
+    volatile int val_R;
 
-volatile int distance2;
+    volatile int distance2;
 
-volatile int distance3;
+    volatile int distance3;
 
-volatile int distance4;
+    volatile int distance4;
 
-volatile int sound1;
+    volatile int sound1;
 
-volatile int flag;
+    volatile int flag;
 
-Matrix myMatrix(A4, A5);
+    Matrix myMatrix(A4, A5);
 
-void Front() { //go forward
+    void Front() { //go forward
 
-digitalWrite(8,LOW); //pin 8 outputs low level
+    digitalWrite(8,LOW); //pin 8 outputs low level
 
-digitalWrite(A1, LOW); //A1 outputs low level
+    digitalWrite(A1, LOW); //A1 outputs low level
 
-analogWrite(9,140);
+    analogWrite(9,140);
 
-analogWrite(10,140);
+    analogWrite(10,140);
 
-}
+    }
 
-void Left() {
+    void Left() {
 
-digitalWrite(8, LOW);
+    digitalWrite(8, LOW);
 
-digitalWrite(A1, LOW);
+    digitalWrite(A1, LOW);
 
-analogWrite(9, 100);
+    analogWrite(9, 100);
 
-analogWrite(10, 180);
+    analogWrite(10, 180);
 
-}
+    }
 
-void Left2() { //turn left
+    void Left2() { //turn left
 
-digitalWrite(8, HIGH);
+    digitalWrite(8, HIGH);
 
-digitalWrite(A1, LOW);
+    digitalWrite(A1, LOW);
 
-analogWrite(9, 120);
+    analogWrite(9, 120);
 
-analogWrite(10, 120);
+    analogWrite(10, 120);
 
-}
+    }
 
-void Back() { //go back
+    void Back() { //go back
 
-digitalWrite(8,HIGH);
+    digitalWrite(8,HIGH);
 
-digitalWrite(A1,HIGH);
+    digitalWrite(A1,HIGH);
 
-analogWrite(9,149);
+    analogWrite(9,149);
 
-analogWrite(10,150);
+    analogWrite(10,150);
 
-}
+    }
 
-void Right() { //turn right
+    void Right() { //turn right
 
-digitalWrite(8, LOW);
+    digitalWrite(8, LOW);
 
-digitalWrite(A1, LOW);
+    digitalWrite(A1, LOW);
 
-analogWrite(9, 180);
+    analogWrite(9, 180);
 
-analogWrite(10, 100);
+    analogWrite(10, 100);
 
-}
+    }
 
-void Right2() {
+    void Right2() {
 
-digitalWrite(8, LOW);
+    digitalWrite(8, LOW);
 
-digitalWrite(A1, HIGH);
+    digitalWrite(A1, HIGH);
 
-analogWrite(9, 120);
+    analogWrite(9, 120);
 
-analogWrite(10, 120);
+    analogWrite(10, 120);
 
-}
+    }
 
-void Stop() { //stop
+    void Stop() { //stop
 
-digitalWrite(8, HIGH);
+    digitalWrite(8, HIGH);
 
-digitalWrite(A1, HIGH);
+    digitalWrite(A1, HIGH);
 
-analogWrite(9, 0);
+    analogWrite(9, 0);
 
-analogWrite(10, 0);
+    analogWrite(10, 0);
 
-}
+    }
 
-uint8_t LedArray1[8] = {0x18, 0x18, 0x18, 0x18, 0x99, 0x5a, 0x3c, 0x18};
+    uint8_t LedArray1[8] = {0x18, 0x18, 0x18, 0x18, 0x99, 0x5a, 0x3c, 0x18};
 
-uint8_t LEDArray[8];
+    uint8_t LEDArray[8];
 
-uint8_t LedArray2[8] = {0x18, 0x3c, 0x5a, 0x99, 0x18, 0x18, 0x18, 0x18};
+    uint8_t LedArray2[8] = {0x18, 0x3c, 0x5a, 0x99, 0x18, 0x18, 0x18, 0x18};
 
-uint8_t LedArray4[8] = {0x08, 0x04, 0x02, 0xff, 0xff, 0x02, 0x04, 0x08};
+    uint8_t LedArray4[8] = {0x08, 0x04, 0x02, 0xff, 0xff, 0x02, 0x04, 0x08};
 
-uint8_t LedArray3[8] = {0x10, 0x20, 0x40, 0xff, 0xff, 0x40, 0x20, 0x10};
+    uint8_t LedArray3[8] = {0x10, 0x20, 0x40, 0xff, 0xff, 0x40, 0x20, 0x10};
 
-uint8_t LedArray5[8] = {0x18, 0x18, 0x00, 0x18, 0x18, 0x18, 0x18, 0x18};
+    uint8_t LedArray5[8] = {0x18, 0x18, 0x00, 0x18, 0x18, 0x18, 0x18, 0x18};
 
-float checkdistance_2_3() { //ultrasonic ranging
+    float checkdistance_2_3() { //ultrasonic ranging
 
-digitalWrite(2, LOW);
+    digitalWrite(2, LOW);
 
-delayMicroseconds(2);
+    delayMicroseconds(2);
 
-digitalWrite(2, HIGH);
+    digitalWrite(2, HIGH);
 
-delayMicroseconds(10);
+    delayMicroseconds(10);
 
-digitalWrite(2, LOW);
+    digitalWrite(2, LOW);
 
-float distance = pulseIn(3, HIGH) / 58.00; //calculate distance
+    float distance = pulseIn(3, HIGH) / 58.00; //calculate distance
 
-delay(10); //delay time
+    delay(10); //delay time
 
-return distance;
+    return distance;
 
-}
+    }
 
-void follow() {
+    void follow() {
 
-flag = 0;
+    flag = 0;
 
-while (flag == 0) {
+    while (flag == 0) {
 
-distance1 = checkdistance_2_3();
+    distance1 = checkdistance_2_3();
 
-if (distance1 \> 20 && distance1 \< 40) {
+    if (distance1 \> 20 && distance1 \< 40) {
 
-Front();
+    Front();
 
-} else if (distance1 \> 15 && distance1 \<= 20) {
+    } else if (distance1 \> 15 && distance1 \<= 20) {
 
-Stop();
+    Stop();
 
-} else if (distance1 \> 0 && distance1 \<= 15) {
+    } else if (distance1 \> 0 && distance1 \<= 15) {
 
-Back();
+    Back();
 
-} else if (distance1 \> 40) {
+    } else if (distance1 \> 40) {
 
-Stop();
+    Stop();
 
-}
+    }
 
-if (Serial.available() \> 0) {
+    if (Serial.available() \> 0) {
 
-val = Serial.read();
+    val = Serial.read();
 
-if (val == 'S') {
+    if (val == 'S') {
 
-flag = 1;
+    flag = 1;
 
-}
+    }
 
-}
+    }
 
-}
+    }
 
-}
+    }
 
-void tracking() {
+    void tracking() {
 
-flag = 0;
+    flag = 0;
 
-while (flag == 0) {
+    while (flag == 0) {
 
-val_L = digitalRead(4);
+    val_L = digitalRead(4);
 
-val_R = digitalRead(5);
+    val_R = digitalRead(5);
 
-if (val_L == 0 && val_R == 1) {
+    if (val_L == 0 && val_R == 1) {
 
-Left();
+    Left();
 
-} else if (val_L == 1 && val_R == 0) {
+    } else if (val_L == 1 && val_R == 0) {
 
-Right();
+    Right();
 
-} else if (val_L == 1 && val_R == 1) {
+    } else if (val_L == 1 && val_R == 1) {
 
-Stop();
+    Stop();
 
-} else {
+    } else {
 
-Front();
+    Front();
 
-}
+    }
 
-if (Serial.available() \> 0) {
+    if (Serial.available() \> 0) {
 
-val = Serial.read();
+    val = Serial.read();
 
-if (val == 'S') {
+    if (val == 'S') {
 
-flag = 1;
+    flag = 1;
 
-}
+    }
 
-}
+    }
 
-}
+    }
 
-}
+    }
 
-void avoid(){
+    void avoid(){
 
-distance4 = checkdistance_2_3();
+    distance4 = checkdistance_2_3();
 
-if(distance4 \< 15&&distance4 \>0){
+    if(distance4 \< 15&&distance4 \>0){
 
-Stop();
+    Stop();
 
-Left2();
+    Left2();
 
-delay(380);
+    delay(380);
 
-Stop();
+    Stop();
 
-distance1 = checkdistance_2_3();
+    distance1 = checkdistance_2_3();
 
-delay(300);
+    delay(300);
 
-Right2();
+    Right2();
 
-delay(750);
+    delay(750);
 
-Stop();
+    Stop();
 
-distance2 = checkdistance_2_3();
+    distance2 = checkdistance_2_3();
 
-delay(300);
+    delay(300);
 
-if (distance1 \> distance2) {
+    if (distance1 \> distance2) {
 
-Left2();
+    Left2();
 
-delay(750);
+    delay(750);
 
-Front();
+    Front();
 
-}else{
+    }else{
 
-Front();
+    Front();
 
-}
+    }
 
-}
+    }
 
-else{
+    else{
 
-Front();
+    Front();
 
-}
+    }
 
-}
+    }
 
-void sound() {
+    void sound() {
 
-flag = 0;
+    flag = 0;
 
-while (flag == 0) {
+    while (flag == 0) {
 
-sound1 = analogRead(A0);
+    sound1 = analogRead(A0);
 
-if (sound1 \> 150) {
+    if (sound1 \> 150) {
 
-for(int i=0;i\<10;i++){
+    for(int i=0;i\<10;i++){
 
-avoid();
+    avoid();
 
-delay(10);
+    delay(10);
 
-}
+    }
 
-}
+    }
 
-else{
+    else{
 
-Stop();
+    Stop();
 
-}
+    }
 
-if (Serial.available() \> 0) {
+    if (Serial.available() \> 0) {
 
-val = Serial.read();
+    val = Serial.read();
 
-if (val == 'S') {
+    if (val == 'S') {
 
-flag = 1;
+    flag = 1;
 
-}
+    }
 
-}
+    }
 
-}
+    }
 
-}
+    }
 
-void music123() {
+    void music123() {
 
-flag = 0;
+    flag = 0;
 
-while (flag == 0) {
+    while (flag == 0) {
 
-tone(6, 392);
+    tone(6, 392);
 
-delay(125);
+    delay(125);
 
-tone(6, 392);
+    tone(6, 392);
 
-delay(125);
+    delay(125);
 
-tone(6, 440);
+    tone(6, 440);
 
-delay(250);
+    delay(250);
 
-tone(6, 392);
+    tone(6, 392);
 
-delay(250);
+    delay(250);
 
-tone(6, 532);
+    tone(6, 532);
 
-delay(250);
+    delay(250);
 
-tone(6, 494);
+    tone(6, 494);
 
-delay(500);
+    delay(500);
 
-tone(6, 392);
+    tone(6, 392);
 
-delay(125);
+    delay(125);
 
-tone(6, 392);
+    tone(6, 392);
 
-delay(125);
+    delay(125);
 
-tone(6, 440);
+    tone(6, 440);
 
-delay(250);
+    delay(250);
 
-tone(6, 392);
+    tone(6, 392);
 
-delay(250);
+    delay(250);
 
-tone(6, 587);
+    tone(6, 587);
 
-delay(250);
+    delay(250);
 
-tone(6, 532);
+    tone(6, 532);
 
-delay(500);
+    delay(500);
 
-tone(6, 392);
+    tone(6, 392);
 
-delay(125);
+    delay(125);
 
-tone(6, 392);
+    tone(6, 392);
 
-delay(125);
+    delay(125);
 
-tone(6, 784);
+    tone(6, 784);
 
-delay(250);
+    delay(250);
 
-tone(6, 659);
+    tone(6, 659);
 
-delay(250);
+    delay(250);
 
-tone(6, 532);
+    tone(6, 532);
 
-delay(250);
+    delay(250);
 
-tone(6, 494);
+    tone(6, 494);
 
-delay(250);
+    delay(250);
 
-tone(6, 440);
+    tone(6, 440);
 
-delay(250);
+    delay(250);
 
-tone(6, 392);
+    tone(6, 392);
 
-delay(125);
+    delay(125);
 
-tone(6, 392);
+    tone(6, 392);
 
-delay(125);
+    delay(125);
 
-tone(6, 330);
+    tone(6, 330);
 
-delay(250);
+    delay(250);
 
-tone(6, 262);
+    tone(6, 262);
 
-delay(250);
+    delay(250);
 
-tone(6, 587);
+    tone(6, 587);
 
-delay(250);
+    delay(250);
 
-tone(6, 532);
+    tone(6, 532);
 
-delay(500);
+    delay(500);
 
-noTone(6);
+    noTone(6);
 
-flag = 1;
+    flag = 1;
 
-val = 'S';
+    val = 'S';
 
-}
+    }
 
-}
+    }
 
-void setup() {
+    void setup() {
 
-Serial.begin(9600);
+    Serial.begin(9600);
 
-val = 0;
+    val = 0;
 
-distance1 = 0;
+    distance1 = 0;
 
-val_L = 0;
+    val_L = 0;
 
-val_R = 0;
+    val_R = 0;
 
-distance2 = 0;
+    distance2 = 0;
 
-distance3 = 0;
+    distance3 = 0;
 
-distance4 = 0;
+    distance4 = 0;
 
-sound1 = 0;
+    sound1 = 0;
 
-flag = 0;
+    flag = 0;
 
-myMatrix.begin(0x70);
+    myMatrix.begin(0x70);
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-pinMode(8, OUTPUT);
+    pinMode(8, OUTPUT);
 
-pinMode(A1, OUTPUT);
+    pinMode(A1, OUTPUT);
 
-pinMode(6, OUTPUT);
+    pinMode(6, OUTPUT);
 
-pinMode(2, OUTPUT);
+    pinMode(2, OUTPUT);
 
-pinMode(3, INPUT);
+    pinMode(3, INPUT);
 
-pinMode(4, INPUT);
+    pinMode(4, INPUT);
 
-pinMode(5, INPUT);
+    pinMode(5, INPUT);
 
-}
+    }
 
-void loop() {
+    void loop() {
 
-if (Serial.available() \> 0) {
+    if (Serial.available() \> 0) {
 
-val = Serial.read();
+    val = Serial.read();
 
-Serial.println(val);
+    Serial.println(val);
 
-}
+    }
 
-switch (val) {
+    switch (val) {
 
-case 'F':
+    case 'F':
 
-Front();
+    Front();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for (int i = 0; i \< 8; i++)
+    for (int i = 0; i \< 8; i++)
 
-{
+    {
 
-LEDArray[i] = LedArray1[i];
+    LEDArray[i] = LedArray1[i];
 
-for (int j = 7; j \>= 0; j--)
+    for (int j = 7; j \>= 0; j--)
 
-{
+    {
 
-if ((LEDArray[i] & 0x01) \> 0)
+    if ((LEDArray[i] & 0x01) \> 0)
 
-myMatrix.drawPixel(j, i, 1);
+    myMatrix.drawPixel(j, i, 1);
 
-LEDArray[i] = LEDArray[i] \>\> 1;
+    LEDArray[i] = LEDArray[i] \>\> 1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-break;
+    break;
 
-case 'B':
+    case 'B':
 
-Back();
+    Back();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for (int i = 0; i \< 8; i++)
+    for (int i = 0; i \< 8; i++)
 
-{
+    {
 
-LEDArray[i] = LedArray2[i];
+    LEDArray[i] = LedArray2[i];
 
-for (int j = 7; j \>= 0; j--)
+    for (int j = 7; j \>= 0; j--)
 
-{
+    {
 
-if ((LEDArray[i] & 0x01) \> 0)
+    if ((LEDArray[i] & 0x01) \> 0)
 
-myMatrix.drawPixel(j, i, 1);
+    myMatrix.drawPixel(j, i, 1);
 
-LEDArray[i] = LEDArray[i] \>\> 1;
+    LEDArray[i] = LEDArray[i] \>\> 1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-break;
+    break;
 
-case 'L':
+    case 'L':
 
-Left();
+    Left();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for (int i = 0; i \< 8; i++)
+    for (int i = 0; i \< 8; i++)
 
-{
+    {
 
-LEDArray[i] = LedArray4[i];
+    LEDArray[i] = LedArray4[i];
 
-for (int j = 7; j \>= 0; j--)
+    for (int j = 7; j \>= 0; j--)
 
-{
+    {
 
-if ((LEDArray[i] & 0x01) \> 0)
+    if ((LEDArray[i] & 0x01) \> 0)
 
-myMatrix.drawPixel(j, i, 1);
+    myMatrix.drawPixel(j, i, 1);
 
-LEDArray[i] = LEDArray[i] \>\> 1;
+    LEDArray[i] = LEDArray[i] \>\> 1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-break;
+    break;
 
-case 'R':
+    case 'R':
 
-Right();
+    Right();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for (int i = 0; i \< 8; i++)
+    for (int i = 0; i \< 8; i++)
 
-{
+    {
 
-LEDArray[i] = LedArray3[i];
+    LEDArray[i] = LedArray3[i];
 
-for (int j = 7; j \>= 0; j--)
+    for (int j = 7; j \>= 0; j--)
 
-{
+    {
 
-if ((LEDArray[i] & 0x01) \> 0)
+    if ((LEDArray[i] & 0x01) \> 0)
 
-myMatrix.drawPixel(j, i, 1);
+    myMatrix.drawPixel(j, i, 1);
 
-LEDArray[i] = LEDArray[i] \>\> 1;
+    LEDArray[i] = LEDArray[i] \>\> 1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-break;
+    break;
 
-case 'S':
+    case 'S':
 
-Stop();
+    Stop();
 
-myMatrix.clear();
+    myMatrix.clear();
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-for (int i = 0; i \< 8; i++)
+    for (int i = 0; i \< 8; i++)
 
-{
+    {
 
-LEDArray[i] = LedArray5[i];
+    LEDArray[i] = LedArray5[i];
 
-for (int j = 7; j \>= 0; j--)
+    for (int j = 7; j \>= 0; j--)
 
-{
+    {
 
-if ((LEDArray[i] & 0x01) \> 0)
+    if ((LEDArray[i] & 0x01) \> 0)
 
-myMatrix.drawPixel(j, i, 1);
+    myMatrix.drawPixel(j, i, 1);
 
-LEDArray[i] = LEDArray[i] \>\> 1;
+    LEDArray[i] = LEDArray[i] \>\> 1;
 
-}
+    }
 
-}
+    }
 
-myMatrix.writeDisplay();
+    myMatrix.writeDisplay();
 
-noTone(6);
+    noTone(6);
 
-break;
+    break;
 
-case 'U':
+    case 'U':
 
-follow();
+    follow();
 
-break;
+    break;
 
-case 'X':
+    case 'X':
 
-tracking();
+    tracking();
 
-break;
+    break;
 
-case 'Y':
+    case 'Y':
 
-sound();
+    sound();
 
-break;
+    break;
 
-case '1':
+    case '1':
 
-tone(6, 262);
+    tone(6, 262);
 
-break;
+    break;
 
-case '2':
+    case '2':
 
-tone(6, 294);
+    tone(6, 294);
 
-break;
+    break;
 
-case '3':
+    case '3':
 
-tone(6, 330);
+    tone(6, 330);
 
-break;
+    break;
 
-case '4':
+    case '4':
 
-tone(6, 349);
+    tone(6, 349);
 
-break;
+    break;
 
-case '5':
+    case '5':
 
-tone(6, 392);
+    tone(6, 392);
 
-break;
+    break;
 
-case '6':
+    case '6':
 
-tone(6, 440);
+    tone(6, 440);
 
-break;
+    break;
 
-case '7':
+    case '7':
 
-tone(6, 494);
+    tone(6, 494);
 
-break;
+    break;
 
-case '8':
+    case '8':
 
-tone(6, 532);
+    tone(6, 532);
 
-break;
+    break;
 
-case 'G':
+    case 'G':
 
-tone(6, 587);
+    tone(6, 587);
 
-break;
+    break;
 
-case 'H':
+    case 'H':
 
-tone(6, 659);
+    tone(6, 659);
 
-break;
+    break;
 
-case 'J':
+    case 'J':
 
-tone(6, 698);
+    tone(6, 698);
 
-break;
+    break;
 
-case 'P':
+    case 'P':
 
-music123();
+    music123();
 
-break;
+    break;
 
-}
+    }
 
-}
+    }
 
 Test Result：
 

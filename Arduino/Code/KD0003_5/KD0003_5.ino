@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 5
+Button Counter
+http//www.kidsbits.cc
+*/
 volatile int num;      //定义整型变量num
 
 void setup(){

@@ -1,3 +1,9 @@
+/*
+kidsbits coding robot kit
+Project 12-1
+Bluetooth Remote Control
+http//www.kidsbits.cc
+*/
 char ble_val; //字符变量，用于存放蓝牙接收到的值
 void setup() {
   Serial.begin(9600);
