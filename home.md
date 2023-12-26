@@ -1,6 +1,6 @@
 # **Coding Robot**
 
-![KD0003-1500×1500-02](media/80abe950003c1f5a91052b1c1ee8b3e9.jpeg)
+![](media/80abe950003c1f5a91052b1c1ee8b3e9.jpeg)
 
 ## **1.Description**
 
@@ -37,7 +37,7 @@ It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS comp
 -   Working voltage: 5V
 -   Battery: 14500 lithium battery 700MAH 3.7V
 -   Power supply: power via USB cable or battery
--   Dimensions (including wheels): 92mm\*105mm\*95mm
+-   Dimensions (including wheels): 92mm*105mm*95mm
 -   N20 motor speed: 5V 200 rpm
 -   Bluetooth APP control: support both Android and IOS system
 -   Working temperature: 0-50℃
@@ -46,7 +46,7 @@ It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS comp
 
 | No | Product Name                         | QTY | Picture                                                  |
 |----|--------------------------------------|-----|----------------------------------------------------------|
-| 1  | Kidsbits Yellow Robot                | 1   | ![kd0003-2](media/40ca723ac5698b2b59c9c415aef89f8f.jpeg) |
+| 1  | Kidsbits Yellow Robot                | 1   | ![](media/40ca723ac5698b2b59c9c415aef89f8f.jpeg) |
 | 2  | Kidsbits Push Button Module          | 1   | ![](media/b77ff44596242067728f2ba17d1d6e5f.png)          |
 | 3  | Kidsbits 7-color Flashing LED Module | 1   | ![](media/cc330414cc7dee613007b751555953ee.png)          |
 | 4  | Kidsbits Photoresistor               | 1   | ![](media/eae591de59355445eb68491c110aa6c1.png)          |
