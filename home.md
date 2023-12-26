@@ -1,8 +1,8 @@
-**Coding Robot**
+# **Coding Robot**
 
 ![KD0003-1500×1500-02](media/80abe950003c1f5a91052b1c1ee8b3e9.jpeg)
 
-**1.Description**
+## **1.Description**
 
 kidsbits rolls out a Kidsbits yellow car, aiming at cultivating children’s hands-on logical analysis, creativity and problem solving ability by learning practical knowledge about electronics, mechanics, control logic and computer science.
 
@@ -16,14 +16,14 @@ This tutorial is designed to stimulate children's interest in programming and mi
 
 It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS composite has the advantages of heat-resistant, anti-chemical and low temperature resistance. It is widely applied to industrial fields such as machinery, automobiles, electronic appliances, instrumentation, textiles and construction.
 
-**Precaution:**
+  **Precaution:**
 
 -   No sharp angles and smooth surface, easy to handle and control.
 -   Sturdy strong structure,without tiny parts and risk of choking
 -   Complete car body, no crack, no potential dangers for kids.
 -   With plastic structure, safe and reliable.
 
-**2.Features**
+## **2.Features**
 
 -   No need to install and wire: an integrated design; the control board integrates functions such as ultrasonic, line tracking, LED display, etc.
 -   Multiple functions: play music, display patterns, BT control, obstacle avoidance, line tracking and others.
@@ -32,7 +32,7 @@ It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS comp
 -   Multiple controls: IR remote control, App control (iOS and Android system)
 -   Basic programming：C language code of Arduino IDE, Mixly graphical programming and Scratch graphical programming
 
-**3.Parameters**
+## **3.Parameters**
 
 -   Working voltage: 5V
 -   Battery: 14500 lithium battery 700MAH 3.7V
@@ -42,7 +42,7 @@ It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS comp
 -   Bluetooth APP control: support both Android and IOS system
 -   Working temperature: 0-50℃
 
-**4.Kit List**
+## **4.Kit List**
 
 | No | Product Name                         | QTY | Picture                                                  |
 |----|--------------------------------------|-----|----------------------------------------------------------|
@@ -55,32 +55,4 @@ It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS comp
 | 7  | AM/MK5P Black USB Cable              | 1   | ![](media/7269f19a6da4ec905da487cb940dfe95.png)          |
 | 8  | 200mm Blue RJ11 Cable                | 4   | ![](media/9d9997511210f7dda67c38c6d4d56af1.png)          |
 
-1.  **Projects**
 
-Project 01：Blinking LED
-
-Project 02：Playing Music
-
-Project 03：Birthday Gift
-
-Project 04：Distance Detector
-
-Project 05：Button Counter
-
-Project 06：Motor
-
-Project 07：Dot Matrix Display
-
-Project 08：Obstacle Avoidance Robot
-
-Project 09：Line Tracking Smart Car
-
-Project 10：Magical Pattern
-
-Project 11：Sound controlled Smart Car
-
-Project 12：Bluetooth Knowledge
-
-Project 13：Bluetooth Remote Control
-
-Project 14：Bluetooth Robot Car

@@ -1,94 +1,6 @@
-Thanks for your support on our products. We will continue to provide you with
-higher quality products and better services!
+# Get Started with Arduino
 
-Thanks for your support on our products. We will continue to provide you with
-higher quality products and better services!
-
-1.Description
-
-Keyestudio rolls out a Kidsbits yellow car, aiming at cultivate children’s
-hands-on logical analysis, creativity and problem solving ability by learning
-practical knowledge about electronics, mechanics, control logic and computer
-science.
-
-The shell of this car is modeled after building blocks.This robot is compatible
-with Lego bricks too, substantially fostering numerous experiments.
-Additionally, it is equipped with two passive buzzers to play music and an LED
-display to show the pattern to your taste.
-
-And the LED display can be combined with ultrasonic modules which can be
-regarded as two eyes to make it more interesting. Furthermore, it can be
-chargeable.
-
-And this tutorial is designed to stimulate children's interest in programming
-and microcontrollers. From software download, installation to usage to 14
-programming projects, children can learn to program to control the yellow robot.
-
-It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS
-composite is heat-resistant, anti-chemical, low temperature resistance. It is
-widely applied to industrial fields such as machinery, automobiles, electronic
-appliances, instrumentation, textiles and construction.
-
-Precaution:
-
-No sharp angles and smooth surface, easy to handle and control.
-
-Sturdy strong structure,without tiny parts and risk of choking
-
-Complete car body, no crack, no potential dangers for kids.
-
-With plastic structure, safe and reliable.
-
-2.Features
-
-No need to install and wire: an integrated design; the control board integrates
-functions such as ultrasonic, line tracking, LED display, etc.
-
-Multiple functions: play music, display patterns, BT control, obstacle
-avoidance, line tracking and others.
-
-High Tenacity: high quality metal motors
-
-High extension: its rear is equipped with 4 sensor expansion ports; its body
-adopts a building block design and it is compatible with Lego bricks too, which
-makes it convenient for the car to connect with other modules and sensors.
-
-Multiple controls: IR remote control, App control (iOS and Android system)
-
-Basic programming：C language code of Arduino IDE.
-
-3.Parameters
-
-Working voltage: 5V
-
-Battery: 14500 lithium battery 700MAH 3.7V
-
-Power supply: power via USB cable or battery
-
-Dimensions (including wheels): 92mm\*105mm\*95mm
-
-N20 motor speed: 5V 200 rpm
-
-Bluetooth APP control: support both Android and IOS system
-
-Working temperature: 0-50℃
-
-4.Kit List
-
-| No | Product Name                         | QTY | Picture                                          |
-|----|--------------------------------------|-----|--------------------------------------------------|
-| 1  | Kidsbits Yellow Robot                | 1   | ![](media/40ca723ac5698b2b59c9c415aef89f8f.jpeg) |
-| 2  | Kidsbits Push Button Module          | 1   | ![](media/b77ff44596242067728f2ba17d1d6e5f.png)  |
-| 3  | Kidsbits 7-color Flashing LED Module | 1   | ![](media/cc330414cc7dee613007b751555953ee.png)  |
-| 4  | Kidsbits Photoresistor               | 1   | ![](media/eae591de59355445eb68491c110aa6c1.png)  |
-| 5  | Kidsbits PIR Motion Sensor           | 1   | ![](media/f2ddf213d6206ec56682c123020465d9.png)  |
-| 6  | AM/BM Blue USB Cable                 | 1   | ![](media/c2f7a25fc33ed3bb8bf1f1f1f0b51dc3.png)  |
-| 7  | AM/MK5P Black USB Cable              | 1   | ![](media/7269f19a6da4ec905da487cb940dfe95.png)  |
-| 8  | 200mm Blue RJ11 Cable                | 4   | ![](media/9d9997511210f7dda67c38c6d4d56af1.png)  |
-
-Get Started with Arduino
-
-Installing Arduino IDE
+## Installing Arduino IDE
 
 When you get control board, you need to download Arduino IDE and driver firstly.
 
@@ -239,7 +151,7 @@ Click![](media/9c9158a5d49baa740ea2f0048f655017.png)to upload the program
 After the program is uploaded successfully, the onboard LED blinks.
 Congratulation, you have finished the first program.
 
-6.Add project Libraries
+## 6.Add project Libraries
 
 (1)What are Libraries ?
 
@@ -283,13 +195,13 @@ into the libraries folder of Arduino IDE.
 
 Then the libraries of yellow robot are installed successfully, as shown below:
 
-7\. Projects：
+# 7. Projects：
 
 The whole project begins with basic programs. By assembling the robot car, you
 will absorb the knowledge of electronics and machinery step by step. I reckon
 that you can hardly sit still and itch to have a go now. Let’s get started.
 
-Project 1: Blinking LED
+## Project 1: Blinking LED
 
 Introduction：
 
@@ -399,7 +311,7 @@ delay(100);
 The test result shows that the LED flashes faster. Therefore, we can draw a
 conclusion that pins and time delaying affect flash frequency.
 
-Project 2: Playing Music
+## Project 2: Playing Music
 
 Introduction：
 
@@ -610,7 +522,7 @@ Here is the notation of Ode to Joy.
 
 ![](media/4a79470cc28f087a3834d168bc0c343f.jpeg)
 
-Project 3: Birthday Gift
+## Project 3: Birthday Gift
 
 Introduction：
 
@@ -846,7 +758,7 @@ pinMode- define the mode of Pin as output or input
 
 delay(500)-delay function; 500 is delay time, you can set delay time.
 
-Project 4: Distance Detector
+## Project 4: Distance Detector
 
 ![](media/d21b657a9955f07694d9a0f7ff5f6dcb.png)
 
@@ -1012,7 +924,7 @@ the obstacle away from 0cm to 8cm.
 
 ![](media/6db207f9af332d566c628c8e577bd1f4.png)
 
-Project 5: Button Counter
+## Project 5: Button Counter
 
 ![](media/9296f9187678f03c1551b75780eb5681.png)
 
@@ -1113,7 +1025,7 @@ When you press or release button, different digital signals will be output due
 to the shaking of the button. To eliminate shaking, we need to delay time. In
 this chapter, we delay in 10ms
 
-Project 6: Motor
+## Project 6: Motor
 
 Introduction:
 
@@ -1360,7 +1272,7 @@ delay(2000);
 
 The motor will slow down when the code is uploaded.
 
-Project 7: 8\*8 Dot Matrix Dispaly
+## Project 7: 8*8 Dot Matrix Dispaly
 
 ![](media/7a0a21f6196faf5853cf2b3ce12e1bbd.png)
 
@@ -1710,7 +1622,7 @@ myMatrix.writeDisplay();
 Upload code, the yellow robot will show arrow up,down, leftward and rightward
 and smile image, circularly.
 
-Project 8: Obstacle Avoidance Robot
+## Project 8: Obstacle Avoidance Robot
 
 ![](media/221bab57cc5a0e56499bb91bf96f063c.png)
 
@@ -1950,7 +1862,7 @@ forward. If less than 15cm, the car will stop and play "tick,tick"
 sound. If the left obstacle distance is greater than the right distance, the car
 will turn left. On the contrary, it will turn right.
 
-Project 9: Line Tracking Smart Car
+## Project 9: Line Tracking Smart Car
 
 ![](media/d54bce7b6fd3072f496d3b1c2ee367ed.png)
 
@@ -2127,7 +2039,7 @@ front();
 Upload the code, slide the switch to ON end. Then the yellow robot will follow
 the black line.
 
-Project 10: Magical Pattern
+## Project 10: Magical Pattern
 
 ![](media/4f3a982d0aab3ee19939999057c92d21.png)
 
@@ -2467,7 +2379,7 @@ Upload test code, the yellow robot will display lit LEDs gradually when
 detecting people around. If nobody is nearby, it will convert from a big square
 into a smaller one, circularly.
 
-Project 11: Sound-controlled Smart Car
+## Project 11: Sound-controlled Smart Car
 
 Description：
 
@@ -2748,7 +2660,7 @@ When the sound intensity is more than 150, the yellow robot will activate
 obstacle avoidance; when the sound intensity is less than 150, the robot will
 stop.
 
-Project 12: Bluetooth Remote Control
+## Project 12: Bluetooth Remote Control
 
 Description：
 
@@ -2928,7 +2840,7 @@ control the LED on and off
 
 ![](media/252b02f080ca4181c78422f9766dda27.png)
 
-Project 13: Bluetooth Knowledge
+## Project 13: Bluetooth Knowledge
 
 Description：
 
@@ -3269,7 +3181,7 @@ Test Result
 Upload code, open switches under the yellow robot and pair with Bluetooth. Then
 you can control this robot through App.
 
-Project 14: Bluetooth Robot Car
+## Project 14: Bluetooth Robot Car
 
 Description：
 
