@@ -1,5 +1,7 @@
 
-#  Getting started with kidsblock
+# Kidsblock tutorial
+
+##  Getting started with kidsblock
 
 **Instruction**
 
@@ -11,7 +13,7 @@ The Kidsblock, based on the Scratch graphical programming software, integrates m
 
 **[MACOS system](https://www.kidsblock.cn/Down/KidsBlock-MACOS.dmg)**
 
-# How to use KidsBlock
+**How to use KidsBlock**
 
 **Interface**
 
@@ -134,9 +136,9 @@ Open Kidsblock，click **file and Load from your computer**，then select the SB
 ![](media/24eb94a7916094e9e300765393b4fd2d.png)
 
 
-# Projects
+## Projects
 
-## Project 01: Blinking LED
+### Project 01: Blinking LED
 
 **Introduction：**
 
@@ -184,7 +186,7 @@ Complete Program
 
 Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f647398d49d7.png)to upload the code to the yellow robot successfully, the LED connected to D12 blinks circularly, with an interval of 500ms.
 
-## Project 02: Playing Music
+### Project 02: Playing Music
 
 **Introduction：**
 
@@ -261,7 +263,7 @@ Complete Program
 
 Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f647398d49d7.png)to upload the code to the yellow robot successfully, you will hear the Ode to Joy song.
 
-## Project 03: Birthday Gift
+### Project 03: Birthday Gift
 
 **Introduction：**
 
@@ -334,7 +336,7 @@ Complete Program
 
 Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f647398d49d7.png)to upload the code to the yellow robot successfully, the robot will blink its LED and play song; however, under the strong light, it won’t take a reaction.
 
-## Project 04: Distance Detector
+### Project 04: Distance Detector
 
 ![](media/d21b657a9955f07694d9a0f7ff5f6dcb.png)
 
@@ -417,7 +419,7 @@ Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f64739
 
 ![](media/6db207f9af332d566c628c8e577bd1f4.png)
 
-## Project 05: Button Counter
+### Project 05: Button Counter
 
 ![图片1](media/c83e32f45408be749fbba4aea8f049ba.png)
 
@@ -484,7 +486,7 @@ Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f64739
 
 When you press or release button, different digital signals will be output due to the shaking of the button. To eliminate shaking, we need to delay time. In this chapter, we delay in 10ms.
 
-## Project 06: Motor
+### Project 06: Motor
 
 **Introduction:**
 
@@ -567,7 +569,7 @@ Theoretically, the PWM values of the left and right motors are the same, however
 
 Slide the Bluetooth switch to OFF end,,click![](media/7d0dd11d1d0571b13ca0f647398d49d7.png)to upload the code to the yellow robot successfully, slide the power switch to ON end. The car will move forward in 3s, then go backwards in 3s, stop in 3s, and turn left in 3s and then right in 3s and repeat this pattern.
 
-## Project 07: 8*8 Dot Matrix Dispaly
+### Project 07: 8*8 Dot Matrix Dispaly
 
 ![](media/7a0a21f6196faf5853cf2b3ce12e1bbd.png)
 
@@ -669,7 +671,7 @@ Complete Program
 
 Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f647398d49d7.png)to upload the code to the yellow robot successfully, the yellow robot will show arrow up,down, leftward and rightward and ❤ image, circularly.
 
-## Project 08: Obstacle Avoidance Robot
+### Project 08: Obstacle Avoidance Robot
 
 ![](media/221bab57cc5a0e56499bb91bf96f063c.png)
 
@@ -712,7 +714,7 @@ Pin Trig (trigger signal input) and pin Echo are connected to digital 2 and 3 of
 
 Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f647398d49d7.png)to upload the code to the yellow robot successfully,slide the power switch to ON end. If the obstacle distance is more than and equal to 15cm, the car will go forward. If less than 15cm, the car will stop and play "tick,tick" sound. If the left obstacle distance is greater than the right distance, the car will turn left. On the contrary, it will turn right.
 
-## Project 09: Line Tracking Smart Car
+### Project 09: Line Tracking Smart Car
 
 ![](media/d54bce7b6fd3072f496d3b1c2ee367ed.png)
 
@@ -757,7 +759,7 @@ Theoretically, the PWM values of the left and right motors are the same, both of
 
 Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f647398d49d7.png)to upload the code to the yellow robot successfully, slide the power switch to ON end. Then the yellow robot will follow the black line.
 
-## Project 10: Magical Pattern
+### Project 10: Magical Pattern
 
 ![](media/4f3a982d0aab3ee19939999057c92d21.png)
 
@@ -833,7 +835,7 @@ Turn off the Bluetooth switch before uploading the code.
 
 Click![](media/7d0dd11d1d0571b13ca0f647398d49d7.png)to upload the code to the yellow robot successfully,the yellow robot will display multiple patterns when detecting people around. If nobody is nearby, it will convert from a big square into a smaller one, circularly.
 
-## Project 11: Sound-controlled Smart Car
+### Project 11: Sound-controlled Smart Car
 
 **Description**
 
@@ -879,7 +881,7 @@ Note: Fully charge the yellow robot if you continue further experiments. Clap yo
 
 Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f647398d49d7.png)to upload the code to the yellow robot successfully, slide the power switch to ON end. When the sound intensity is more than 150, the yellow robot will activate obstacle avoidance; when the sound intensity is less than 150, the robot will stop.
 
-## Project 12: Bluetooth Knowledge
+### Project 12: Bluetooth Knowledge
 
 **Description：**
 
@@ -967,7 +969,7 @@ Click each pattern button on the APP and wait for the command from cellphone, As
 
 ![](media/2c314a9ef1bd83f6da74781051886c65.png)
 
-## Project 13: Bluetooth Remote Control
+### Project 13: Bluetooth Remote Control
 
 **Description：**
 
@@ -1046,7 +1048,7 @@ click ![](media/39800a856d2074f9b4ca40cb2df69107.png)on App to control the LED o
 
 ![](media/2b36c101a7ea7b185a826a48a59553e2.png)
 
-## Project 14: Bluetooth Robot Car
+### Project 14: Bluetooth Robot Car
 
 **Description：**
 
