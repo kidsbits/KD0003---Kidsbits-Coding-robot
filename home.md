@@ -4,17 +4,7 @@
 
 ## Description
 
-kidsbits rolls out a Kidsbits yellow car, aiming at cultivating children’s hands-on logical analysis, creativity and problem solving ability by learning practical knowledge about electronics, mechanics, control logic and computer science.
-
-The shell of this car is modeled after building blocks. This robot is compatible with Lego bricks，which can substantially foster numerous experiments.
-
-Additionally, it is equipped with two passive buzzers to play music and an LED display to show the pattern to your taste.
-
-The LED display can be combined with ultrasonic modules, which can be regarded as two eyes to make it more interesting. Furthermore, it is chargeable.
-
-This tutorial is designed to stimulate children's interest in programming and microcontrollers. From download, installation and usage of software to the 14 projects, children can learn to program to control the yellow robot.
-
-It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS composite has the advantages of heat-resistant, anti-chemical and low temperature resistance. It is widely applied to industrial fields such as machinery, automobiles, electronic appliances, instrumentation, textiles and construction.
+kidisbits coding robot is an Arduino-based smart car designed to help children learn programming and electronic knowledge. This kind of car can realize basic forward, backward, left turn, right turn and other functions, and can be easily programmed and controlled through graphical programming software. It usually includes an Arduino development board as the main control core, as well as various sensors and actuators. Through graphical programming software, children can easily drag and connect graphical modules to realize the control and interactive functions of the car. The production process of this kind of car can stimulate children's creativity and hands-on ability, while cultivating their interest in programming and electronic technology.
 
   **Precaution:**
 
