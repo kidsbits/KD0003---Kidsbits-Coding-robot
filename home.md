@@ -1,8 +1,8 @@
-# **kidsbits Coding Robot for STEM**
+# kidsbits Coding Robot for STEM
 
 ![](media/80abe950003c1f5a91052b1c1ee8b3e9.jpeg)
 
-## **Description**
+## Description
 
 kidsbits rolls out a Kidsbits yellow car, aiming at cultivating children’s hands-on logical analysis, creativity and problem solving ability by learning practical knowledge about electronics, mechanics, control logic and computer science.
 
@@ -23,7 +23,7 @@ It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS comp
 -   Complete car body, no crack, no potential dangers for kids.
 -   With plastic structure, safe and reliable.
 
-## **Features**
+## Features
 
 -   No need to install and wire: an integrated design; the control board integrates functions such as ultrasonic, line tracking, LED display, etc.
 -   Multiple functions: play music, display patterns, BT control, obstacle avoidance, line tracking and others.
@@ -32,7 +32,7 @@ It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS comp
 -   Multiple controls: IR remote control, App control (iOS and Android system)
 -   Basic programming：C language code of Arduino IDE, Mixly graphical programming and Scratch graphical programming
 
-## **Parameters**
+## Parameters
 
 -   Working voltage: 5V
 -   Battery: 14500 lithium battery 700MAH 3.7V
@@ -42,7 +42,7 @@ It adopts eco-friendly ABS757 material. As one of the synthetic resins, ABS comp
 -   Bluetooth APP control: support both Android and IOS system
 -   Working temperature: 0-50℃
 
-## **Kit List**
+## Kit List
 
 | No | Product Name                         | QTY | Picture                                                  |
 |----|--------------------------------------|-----|----------------------------------------------------------|
