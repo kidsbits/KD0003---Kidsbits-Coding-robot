@@ -20,7 +20,7 @@ kidisbits coding robot is an Arduino-based smart car designed to help children l
 -   High Tenacity: high quality metal motors
 -   High extension: its rear is equipped with 4 sensor expansion ports; its body adopts a building block design and it is compatible with Lego bricks too, which makes it convenient for the car to connect with other modules and sensors.
 -   Multiple controls: IR remote control, App control (iOS and Android system)
--   Basic programming：C language code of Arduino IDE, Mixly graphical programming and Scratch graphical programming
+-   Basic programming：C language code of Arduino IDE, Kidsblock graphical programming
 
 ## Parameters
 
