@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'coding robot'
+project = 'Coding Robot'
 copyright = '2022, kidsbits'
 author = 'kidsbits'
 
