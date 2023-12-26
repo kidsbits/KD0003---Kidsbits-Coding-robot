@@ -1,6 +1,6 @@
 # Get Started with Arduino
 
-## Installing Arduino IDE
+**Installing Arduino IDE**
 
 When you get control board, you need to download Arduino IDE and driver firstly.
 
@@ -26,7 +26,7 @@ Click JUST DOWNLOAD.
 
 ![](media/745910f7138b08d5cbcb557f194b0679.png)
 
-The Control Board of Kidsbits
+**The Control Board of Kidsbits**
 
 This control board based on Arduino integrates ultrasonic and line-tracking
 functions and boasts two passive buzzers to play music and an LED display
@@ -40,7 +40,7 @@ functions and boasts two passive buzzers to play music and an LED display
 | Size                    | 77.5\*75mm                                                                                           |
 | Environmental Attribute | ROHS                                                                                                 |
 
-Install the Driver of the board
+**Install the Driver of the board**
 
 Let’s install the driver of the main board.
 
@@ -92,7 +92,7 @@ shown below.
 
 ![](media/99b5c00a30cda73cfc396f10ea96f34e.png)
 
-Arduino IDE Setting
+**Arduino IDE Setting**
 
 Click![](media/675ae7298ce0973df720b2fbbb514caa.png)icon，and open Arduino IDE.
 
@@ -151,7 +151,7 @@ Click![](media/9c9158a5d49baa740ea2f0048f655017.png)to upload the program
 After the program is uploaded successfully, the onboard LED blinks.
 Congratulation, you have finished the first program.
 
-## 6.Add project Libraries
+**How to Add Libraries?**
 
 (1)What are Libraries ?
 
@@ -195,7 +195,7 @@ into the libraries folder of Arduino IDE.
 
 Then the libraries of yellow robot are installed successfully, as shown below:
 
-# 7. Projects：
+#  Projects：
 
 The whole project begins with basic programs. By assembling the robot car, you
 will absorb the knowledge of electronics and machinery step by step. I reckon
