@@ -2465,7 +2465,6 @@ Description：
 In this project, we will control the yellow robot via App. You can make it
 perform all functions
 
-Flow Chart：
 
 Preparation
 
