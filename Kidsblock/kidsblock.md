@@ -180,7 +180,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/project_01.png)
+![123](media/project_01.png)
 
 **Project Result**
 
