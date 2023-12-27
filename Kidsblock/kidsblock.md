@@ -142,7 +142,7 @@ Open Kidsblock，click **file and Load from your computer**，then select the SB
 
 **Introduction：**
 
-![C:\\Users\\Administrator\\Desktop\\图片3.png图片3](media/ac163d92577812e1bcb9fe8afc99c642.png)
+![](media/ac163d92577812e1bcb9fe8afc99c642.png)
 
 For starters and enthusiasts, LED Blink is a fundamental program.
 
@@ -154,7 +154,7 @@ In the experiment, we make the LED module blink through the test code.
 
 **Specification：**
 
-![z乐高 (15)](media/11f5eb648b0cce24f6ae5fe427770764.jpeg)
+![](media/11f5eb648b0cce24f6ae5fe427770764.jpeg)
 
 -   Control interface: digital port
 -   Working voltage: DC 3.3-5V
