@@ -2890,15 +2890,11 @@ void loop() {
   }
 
 }
-
+```
 
 Test Result：
 
 Upload code, open switches under the yellow robot and pair with Bluetooth. Then
 you can control this robot through App.
 
-Resource:
 
-Download code, libraries and Arduino IDE:
-
-<https://kd.kidsbits.cc/KD0003>

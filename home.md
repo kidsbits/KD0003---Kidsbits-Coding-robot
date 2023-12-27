@@ -2,6 +2,12 @@
 
 ![](media/80abe950003c1f5a91052b1c1ee8b3e9.jpeg)
 
+## Download Resource:
+
+Download code, libraries and Arduino IDE:
+
+<https://kd.kidsbits.cc/KD0003>
+
 ## Description
 
 kidisbits coding robot is an Arduino-based smart car designed to help children learn programming and electronic knowledge. This kind of car can realize basic forward, backward, left turn, right turn and other functions, and can be easily programmed and controlled through graphical programming software. It usually includes an Arduino development board as the main control core, as well as various sensors and actuators. Through graphical programming software, children can easily drag and connect graphical modules to realize the control and interactive functions of the car. The production process of this kind of car can stimulate children's creativity and hands-on ability, while cultivating their interest in programming and electronic technology.
