@@ -9,14 +9,14 @@ http//www.kidsbits.cc
 volatile char val;
 
 Matrix myMatrix(A4,A5);
-void Front() {   //前进代码
+void Front() {   //advance
   digitalWrite(8,LOW);    
   digitalWrite(A1,LOW);
   analogWrite(9,200);   
   analogWrite(10,200);
 }
 
-void Back() {     //后退代码
+void Back() {     //move back
   digitalWrite(8,HIGH);  
   digitalWrite(A1,HIGH);
   analogWrite(9,194);
@@ -29,21 +29,21 @@ uint8_t LedArray2[8]={0x18,0x3c,0x5a,0x99,0x18,0x18,0x18,0x18};
 uint8_t LedArray3[8]={0x08,0x04,0x02,0xff,0xff,0x02,0x04,0x08};
 uint8_t LedArray4[8]={0x10,0x20,0x40,0xff,0xff,0x40,0x20,0x10};
 uint8_t LedArray5[8]={0x18,0x18,0x00,0x18,0x18,0x18,0x18,0x18};
-void Left() {   //左转代码
+void Left() {   //turn left
   digitalWrite(8,HIGH);   
   digitalWrite(A1,LOW);
   analogWrite(9,120);
   analogWrite(10,120);
 }
 
-void Right() {      //右转代码
+void Right() {      //turn right
   digitalWrite(8,LOW);   
   digitalWrite(A1,HIGH);
   analogWrite(9,120);
   analogWrite(10,120);
 }
 
-void Stop() {     //  停止代码
+void Stop() {     //  Stop
   digitalWrite(8,HIGH);
   digitalWrite(A1,HIGH);
   analogWrite(9,0);
@@ -61,9 +61,9 @@ void setup(){
 }
 
 void loop(){
-  if (Serial.available() > 0) {   //判断串口缓存区是否有数据
-    val = Serial.read();          //读取串口缓存区的数据
-    Serial.println(val);           //打印出来
+  if (Serial.available() > 0) {   //Determine whether there is data in the serial port buffer area
+    val = Serial.read();          //Read data from the serial port buffer
+    Serial.println(val);           //print
   
   }
   switch (val) {

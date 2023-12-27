@@ -5,47 +5,47 @@ Sound-controlled Smart Car
 http//www.kidsbits.cc
 */
 #include <Matrix.h>        
-Matrix myMatrix(A4, A5);    //实例化一个对象名为myMatrix，和定义通讯引脚
-volatile int distance;     //超声波测距变量
+Matrix myMatrix(A4, A5);    //Instantiate an object myMatrix, and define the communication pins
+volatile int distance;     //Ultrasonic ranging variable
 volatile int distance1;
 volatile int distance2;
 int  sensorVal;
 uint8_t LedArray1[8] = {0x00, 0x18, 0x24, 0x00, 0x00, 0xa5, 0xa5, 0x42};
-uint8_t  LEDArray[8];  //定义一个没有初始值的数组变量，为了方便处理多个表情图案数组
+uint8_t  LEDArray[8];  //Define an array variable without an initial value to facilitate the processing of multiple emoticon arrays
 
-void front() {           //前进代码
+void front() {           //advance
   digitalWrite(8, LOW);
   digitalWrite(A1, LOW);
   analogWrite(9, 150);
   analogWrite(10, 150);
 }
 
-void back() {                 //后退代码
+void back() {                 //move back
   digitalWrite(8, HIGH);
   digitalWrite(A1, HIGH);
   analogWrite(9, 150);
   analogWrite(10, 150);
 }
 
-void Stop() {               //停止代码
+void Stop() {               //Stop
   digitalWrite(8, HIGH);
   digitalWrite(A1, HIGH);
   analogWrite(9, 0);
   analogWrite(10, 0);
 }
 
-float checkdistance_2_3() {            //超声波测距代码
+float checkdistance_2_3() {            //Ultrasonic ranging code
   digitalWrite(2, LOW);
   delayMicroseconds(2);
   digitalWrite(2, HIGH);
   delayMicroseconds(10);
   digitalWrite(2, LOW);
-  float distance = pulseIn(3, HIGH) / 58.00;      //计算距离
+  float distance = pulseIn(3, HIGH) / 58.00;      //calculate distance
   delay(10);
   return distance;
 }
 
- void left() {           //左转代码
+ void left() {           //turn left
   digitalWrite(8, HIGH);
   digitalWrite(A1, LOW);
   analogWrite(9, 140);
@@ -53,7 +53,7 @@ float checkdistance_2_3() {            //超声波测距代码
 }
 
 
-void right() {              //右转代码
+void right() {              //turn right
   digitalWrite(8, LOW);
   digitalWrite(A1, HIGH);
   analogWrite(9, 140);
@@ -61,20 +61,20 @@ void right() {              //右转代码
 }
 
 void avoid(){
-  distance = checkdistance_2_3();       //超声波当前所测的距离赋给distance
+  distance = checkdistance_2_3();       //Assign the distance value to distance
   if(distance < 15&&distance >0){
-    Stop();              //暂停
-    left();             //左转
-    delay(380);           //延时380毫秒
+    Stop();              // Stop
+    left();             //turn left
+    delay(380);           //delay 380ms
     Stop();
-    distance1 = checkdistance_2_3();   //当前超声波所测的值赋给distance1
-    delay(300);                //延时300毫秒
-    right();                 //右转  
-    delay(750);           //延时750毫秒
-    Stop();            //暂停
-    distance2 = checkdistance_2_3();   //当前超声波所测的值赋给distance2
+    distance1 = checkdistance_2_3();   //Assign the value to distance1
+    delay(300);                //delay 300ms
+    right();                 //turn right  
+    delay(750);           //delay 750ms
+    Stop();            // Stop
+    distance2 = checkdistance_2_3();   //Assign the value to distance2
     delay(300);
-    if (distance1 > distance2) {    //如果左边大于右边
+    if (distance1 > distance2) {    //If the left is greater than the right 
       left();
       delay(750);
       front();
@@ -91,10 +91,10 @@ void avoid(){
 
 void setup() {
   Serial.begin(9600);
-  pinMode(8, OUTPUT);       //定义8脚为输出
+  pinMode(8, OUTPUT);       //Define pin 8 to output
   pinMode(A1, OUTPUT);
   pinMode(2, OUTPUT);
-  pinMode(3, INPUT);          //定义3脚为输入
+  pinMode(3, INPUT);          //Define pin 3 to input
   distance = 0;
   distance1 = 0;
   distance2 = 0;

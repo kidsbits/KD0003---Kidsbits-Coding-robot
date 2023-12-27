@@ -5,21 +5,21 @@ Birthday Gift
 http//www.kidsbits.cc
 */
 void setup(){
-  Serial.begin(9600);   //设置波特率为9600
-  pinMode(6, OUTPUT);  //设置模拟口A6为输出
-  pinMode(12, OUTPUT);  //设置数字口12为输出
+  Serial.begin(9600);   //Set the baud rate to 9600
+  pinMode(6, OUTPUT);  //Set analog port A6 to output
+  pinMode(12, OUTPUT);  //Set digital port 12 to output
 }
 
 void loop(){
-  Serial.println(analogRead(A6)); //读取A6的模拟值
-  if (analogRead(A6) < 700) {     //判断A6的模拟值是否小于700
-    tone(6,392);               //A6模拟口输出模拟值为392脉冲
-    delay(125);                //延时
+  Serial.println(analogRead(A6)); //Read the analog value of A6
+  if (analogRead(A6) < 700) {     //Judge whether the value of A6 is less than 700
+    tone(6,392);               //A6 analog value is 392 pulses
+    delay(125);                //delay
     tone(6,392);
-    digitalWrite(12,HIGH);       //数字口12输出高电平
+    digitalWrite(12,HIGH);       //Digital port 12 outputs high level
     delay(125);
     tone(6,440);
-    digitalWrite(12,LOW);       //数字口12输出低电平
+    digitalWrite(12,LOW);       //Digital port 12 outputs low level
     delay(250);
     tone(6,392);
     digitalWrite(12,HIGH);

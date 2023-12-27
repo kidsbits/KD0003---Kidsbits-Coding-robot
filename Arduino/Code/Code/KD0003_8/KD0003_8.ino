@@ -7,7 +7,7 @@ http//www.kidsbits.cc
 volatile int distance;
 volatile int distance1;
 volatile int distance2;
-void Stop() {          //停止代码
+void Stop() {          //Stop
   digitalWrite(8,HIGH);
   pinMode(A1, OUTPUT);
   digitalWrite(A1,HIGH); 
@@ -15,7 +15,7 @@ void Stop() {          //停止代码
   analogWrite(10,0);
 }
 
-void left() {         //左转代码
+void left() {         //turn left
   digitalWrite(8,HIGH);
   pinMode(A1, OUTPUT);
   digitalWrite(A1,LOW);
@@ -23,18 +23,18 @@ void left() {         //左转代码
   analogWrite(10,120);
 }
 
-float checkdistance_2_3() {         //超声波测距代码
-  digitalWrite(2, LOW);          //定义2脚输出低电平
-  delayMicroseconds(2);         //精确延迟2毫秒
-  digitalWrite(2, HIGH);        //定义2脚输出高电平
-  delayMicroseconds(10);      //精确延迟10毫秒
+float checkdistance_2_3() {         //Ultrasonic ranging code
+  digitalWrite(2, LOW);          //Define pin 2 output low level
+  delayMicroseconds(2);         //Delay 2 ms
+  digitalWrite(2, HIGH);        //Define pin 2 output high level
+  delayMicroseconds(10);      //Delay 10 ms
   digitalWrite(2, LOW);       
-  float distance = pulseIn(3, HIGH) / 58.00;     //计算距离
+  float distance = pulseIn(3, HIGH) / 58.00;     // calculate distance
   delay(10);
   return distance;
 }
 
-void back() {           //后退代码
+void back() {           //move back
   digitalWrite(8,HIGH);
   pinMode(A1, OUTPUT);
   digitalWrite(A1,HIGH);
@@ -42,7 +42,7 @@ void back() {           //后退代码
   analogWrite(10,150);
 }
 
-void buzzer() {        //蜂鸣器代码
+void buzzer() {        //Buzzer code
   tone(6,532);
   tone(7,532);
   delay(250);
@@ -57,7 +57,7 @@ void buzzer() {        //蜂鸣器代码
   delay(1000);
 }
 
-void front() {           //前进代码
+void front() {           //advance
   digitalWrite(8,LOW);
   pinMode(A1, OUTPUT);
   digitalWrite(A1,LOW);
@@ -65,7 +65,7 @@ void front() {           //前进代码
   analogWrite(10,150);
 }
 
-void right() {         //右转代码
+void right() {         //turn right
   digitalWrite(8,LOW);
   pinMode(A1, OUTPUT);
   digitalWrite(A1,HIGH);
@@ -86,8 +86,8 @@ void setup(){
 }
 
 void loop(){
-  distance = checkdistance_2_3();     //把距离值 赋给distance
-  if (distance < 15&&distance > 0) {         //判断距离是否小于15cm
+  distance = checkdistance_2_3();     //Assign the distance value to distance
+  if (distance < 15&&distance > 0) {         //Judge whether the distance is less than 15cm
     Stop();
     buzzer();
     delay(1000);
@@ -101,7 +101,7 @@ void loop(){
     Stop();
     distance2 = checkdistance_2_3();
     delay(1000);
-    if (distance1 > distance2) {      //如果左边大于右边
+    if (distance1 > distance2) {      //If the left is greater than the right 
       left();
       delay(750);
       front();

@@ -16,70 +16,70 @@ volatile int distance4;
 volatile int sound1;
 volatile int flag;
 
-Matrix myMatrix(A4, A5);     //实例化一个对象名为myMatrix，和定义通讯引脚
-void Front() {                //前进代码
+Matrix myMatrix(A4, A5);     //Instantiate an object myMatrix, and define the communication pins
+void Front() {                //advance
   digitalWrite(8,LOW);    
   digitalWrite(A1,LOW);
   analogWrite(9,140);   
   analogWrite(10,140);  
 }
 
-void Left() {                 //前进左转代码
+void Left() {                 //advance and turn left
   digitalWrite(8, LOW);
   digitalWrite(A1, LOW);
   analogWrite(9, 100);
   analogWrite(10, 180);
 }
 
-void Left2() {             //左转代码
+void Left2() {             //turn left
   digitalWrite(8, HIGH);
   digitalWrite(A1, LOW);
   analogWrite(9, 120);
   analogWrite(10, 120);
 }
 
-void Back() {                //后退代码
+void Back() {                //move back
   digitalWrite(8,HIGH);  
   digitalWrite(A1,HIGH);
   analogWrite(9,149);
   analogWrite(10,150);
 }
 
-void Right() {                //前进右转代码
+void Right() {                //advance and turn right
   digitalWrite(8, LOW);
   digitalWrite(A1, LOW);
   analogWrite(9, 180);
   analogWrite(10, 100);
 }
 
-void Right2() {            //右转代码
+void Right2() {            //turn right
   digitalWrite(8, LOW);
   digitalWrite(A1, HIGH);
   analogWrite(9, 120);
   analogWrite(10, 120);
 }
 
-void Stop() {                  //暂停代码
+void Stop() {                  //Stop
   digitalWrite(8, HIGH);
   digitalWrite(A1, HIGH);
   analogWrite(9, 0);
   analogWrite(10, 0);
 }
-//LCD点阵显示代码
+//LCD dot matrix displays code
 uint8_t LedArray1[8] = {0x18, 0x18, 0x18, 0x18, 0x99, 0x5a, 0x3c, 0x18};
 uint8_t  LEDArray[8];
 uint8_t LedArray2[8] = {0x18, 0x3c, 0x5a, 0x99, 0x18, 0x18, 0x18, 0x18};
 uint8_t LedArray4[8] = {0x08, 0x04, 0x02, 0xff, 0xff, 0x02, 0x04, 0x08};
 uint8_t LedArray3[8] = {0x10, 0x20, 0x40, 0xff, 0xff, 0x40, 0x20, 0x10};
 uint8_t LedArray5[8] = {0x18, 0x18, 0x00, 0x18, 0x18, 0x18, 0x18, 0x18};
-float checkdistance_2_3() {        //超声波测距
+float checkdistance_2_3() {        //ultrasonic ranging
   digitalWrite(2, LOW);
   delayMicroseconds(2);
   digitalWrite(2, HIGH);
   delayMicroseconds(10);
   digitalWrite(2, LOW);
-  float distance = pulseIn(3, HIGH) / 58.00;     //计算距离
-  delay(10);                           //延时
+  float distance = pulseIn(3, HIGH) / 58.00;     //calculate distance
+  delay(10);                           //  delay
   return distance;
 }
 
@@ -136,20 +136,20 @@ void tracking() {
 }
 
 void avoid(){
-  distance4 = checkdistance_2_3();       //超声波当前所测的距离赋给distance
+  distance4 = checkdistance_2_3();       //Assign the distance value to distance
   if(distance4 < 15&&distance4 >0){
-    Stop();              //暂停
-    Left2();             //左转
-    delay(380);           //延时380毫秒
+    Stop();              //Stop
+    Left2();             //turn left
+    delay(380);           //delay 380ms
     Stop();
-    distance1 = checkdistance_2_3();   //当前超声波所测的值赋给distance1
-    delay(300);                //延时300毫秒
-    Right2();                 //右转  
-    delay(750);           //延时750毫秒
-    Stop();            //暂停
-    distance2 = checkdistance_2_3();   //当前超声波所测的值赋给distance2
+    distance1 = checkdistance_2_3();   //Assign the value to distance1
+    delay(300);                //delay 300ms
+    Right2();                 //turn right  
+    delay(750);           //delay 750ms
+    Stop();            //Stop
+    distance2 = checkdistance_2_3();   //Assign the value to distance2
     delay(300);
-    if (distance1 > distance2) {    //如果左边大于右边
+    if (distance1 > distance2) {    //If the left is greater than the right 
       Left2();
       delay(750);
       Front();
@@ -188,7 +188,7 @@ void sound() {
   }
 }
 
-void music123() {                //生日歌代码
+void music123() {                //Birthday song code
   flag = 0;
   while (flag == 0) {
     tone(6, 392);

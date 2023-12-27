@@ -6,33 +6,33 @@ http//www.kidsbits.cc
 */
 #include <Matrix.h>
 
-Matrix myMatrix(A4,A5);       //实例化一个对象名为myMatrix，和定义通讯引脚
-//定义一个数组并赋值为取模工具得到的数组数据。
+Matrix myMatrix(A4,A5);       //Instantiate an object myMatrix, and define the communication pins
+//Define an array and assign it to the array data obtained by the modulating tool
 uint8_t LedArray1[8]={0x18,0x18,0x18,0x18,0x99,0x5a,0x3c,0x18};
-uint8_t  LEDArray[8];     //定义一个数组并赋值为取模工具得到的数组数据。
+uint8_t  LEDArray[8];     //Define an array and assign it to the array data obtained by the modulating tool
 uint8_t LedArray2[8]={0x10,0x20,0x40,0xff,0xff,0x40,0x20,0x10};
 uint8_t LedArray3[8]={0x18,0x3c,0x5a,0x99,0x18,0x18,0x18,0x18};
 uint8_t LedArray4[8]={0x08,0x04,0x02,0xff,0xff,0x02,0x04,0x08};
 uint8_t LedArray5[8]={0x00,0x18,0x24,0x00,0x00,0xa5,0xa5,0x42};
 
 void setup(){
-  myMatrix.begin(0x70);  //通讯地址
+  myMatrix.begin(0x70);  //communication address
 
 }
 
 void loop(){
-  myMatrix.clear();       //清屏
-  for(int i=0; i<8; i++)     //数组有8个数据，循环8次，一个一个分析
+  myMatrix.clear();       //clear
+  for(int i=0; i<8; i++)     //The array has 8 pieces of data, which are looped 8 times, analyzed one by one
   {
-    LEDArray[i]=LedArray1[i];   //将表情图案数组数据一个一个的赋给LEDArray  
-    for(int j=7; j>=0; j--)       //每个数据（字节）有8 bit ,所以需要循环8次
+    LEDArray[i]=LedArray1[i];   //Assign the emoticon array data to LEDArray one by one
+    for(int j=7; j>=0; j--)       //Each data has 8 bits, so it needs to be looped 8 times
     {
-      if((LEDArray[i]&0x01)>0)    //判断数据的最后一个bit是否>0，就是是否为1
-      myMatrix.drawPixel(j, i,1);     //点亮对应的点
-      LEDArray[i] = LEDArray[i]>>1;   //LEDArray[i]往右移一位,用于判断前 1 bit 做准备
+      if((LEDArray[i]&0x01)>0)    //Check whether the last bit of the data is >0, that is, whether it is 1
+      myMatrix.drawPixel(j, i,1);     //Light up the corresponding point
+      LEDArray[i] = LEDArray[i]>>1;   //LEDArray[i] moves one bit to the right to judge the first 1 bit
     }
   }
-  myMatrix.writeDisplay();    //点阵显示
+  myMatrix.writeDisplay();    //dot matrix display
   delay(1000);
   myMatrix.clear();
   myMatrix.writeDisplay();
