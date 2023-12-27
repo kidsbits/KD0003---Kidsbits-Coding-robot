@@ -180,7 +180,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/83b3fc9b2bee7c0912749f70b9b23210.png)
+![](media/project_01.png)
 
 **Project Result**
 
@@ -210,7 +210,7 @@ Passive buzzer is controlled by PWM pulse width rather than tones.
 
 PWM is a means of controlling the analog output via digital means. Digital control is used to generate square waves with different duty cycles (a signal that constantly switches between high and low levels) to control the analog output.In general, the input voltages of ports are 0V and 5V.
 
-![C:\\Users\\zuokejian\\AppData\\Local\\Temp\\ksohtml13604\\wps19.png](media/553f3d1b6ca04e1aa0479841dd075fa2.png)
+![](media/553f3d1b6ca04e1aa0479841dd075fa2.png)
 
 In the above figure, the green line represents a period, and value of analogWrite() corresponds to a percentage which is called Duty Cycle as well. Duty cycle implies that high-level duration is divided by low-level duration in a cycle. From top to bottom, the duty cycle of first square wave is 0% and its corresponding value is 0. The LED brightness is lowest, that is, light off. The more time the high level lasts, the brighter the LED.
 
@@ -236,7 +236,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/61f403f695b8cfeabfb511d96ca124d7.png)
+![](media/project_02.png)
 
 **Project Result1**
 
@@ -279,7 +279,8 @@ It mainly uses photoresistive elements and changes with light intensity. Under t
 
 **Parameter：**
 
-**![光敏](media/fcd9fffd592fd952375db696d1aeee05.jpeg)**![](media/06ad902028d4fdf25883486ce4252b07.png)
+![](media/fcd9fffd592fd952375db696d1aeee05.jpeg)
+![](media/06ad902028d4fdf25883486ce4252b07.png)
 
 Port：EASY plug
 
@@ -328,9 +329,8 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/e1b9d0889775751c4ac0def6ce2f3269.png)
+![](media/project_03.png)
 
-![](media/c09b3dd7adda4a3b331d4e5f6a447cd4.png)
 
 **Project Result**
 
@@ -348,7 +348,7 @@ In this lesson, we will learn how to make such a distance measuring device with 
 
 **Ultrasonic Module**
 
-**![](media/cf2feaa59a3565c77f1dbf59e7b26c3e.png)**
+![](media/cf2feaa59a3565c77f1dbf59e7b26c3e.png)
 
 An ultrasonic sensor uses a sonar to determine the distance from the object like what bats do. And it boasts a complete transmitting module and a receiving module.
 
@@ -358,7 +358,7 @@ Ultrasonic sensors have found wide applications in all sorts of electronic proje
 
 **Working principle：**
 
-![QQ图片20210629133604](media/8b930c8502ccd8f0e6eeefaf947771fa.jpeg)
+![](media/8b930c8502ccd8f0e6eeefaf947771fa.jpeg)
 
 The ultrasonic sensor is shaped like two eyes, of which one serves as the transmitting end and the other the receiving end.
 
@@ -369,8 +369,8 @@ Setting the delay time of Trig pin of SR04 to 10μs at least, which can trigger 
 After triggering, the module will automatically send eight 40KHz ultrasonic pulses and detect whether there is a signal return. This step will be completed automatically by the module.
 If the signal returns, the Echo pin will output a high level, and the duration of the high level is the time from the transmission of the ultrasonic wave to the return.
 
-| ![](media/ba43be6007d9fe3aab0bb609868af640.png) |
-|-------------------------------------------------|
+![](media/ba43be6007d9fe3aab0bb609868af640.png) 
+
 
 **Parameters：**
 
@@ -411,7 +411,9 @@ You can drag blocks to edit. Blocks listed below are for your reference
 ![](media/e4cda0ef487f70ba018ba47f5fa4f185.png)
 ![](media/83a21b308a1629a8402fcf36faaf58e0.png)
 
-Complete Program ![](media/ab415f129b41ad3443fc33f0b9564365.png)![](media/6719e68fc5906b85f5f72771b27b032c.png)
+Complete Program 
+![](media/project_04.png)
+
 
 **Project Result**
 
@@ -421,7 +423,7 @@ Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f64739
 
 ### Project 05: Button Counter
 
-![图片1](media/c83e32f45408be749fbba4aea8f049ba.png)
+![](media/c83e32f45408be749fbba4aea8f049ba.png)
 
 **Description：**
 
@@ -441,7 +443,7 @@ Working voltage: DC 5V
 
 Output signal: digital signal
 
-![按键](media/0e92adeeb838d527a40def66740eb61b.jpeg)
+![](media/0e92adeeb838d527a40def66740eb61b.jpeg)
 
 **Connection Diagram：**
 
@@ -474,13 +476,13 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/5e668dcc646d0c90e49cb7905e0d2a3b.png)
+![](media/project_05.png)
 
 **Project Result**
 
 Slide the Bluetooth switch to OFF end, click![](media/7d0dd11d1d0571b13ca0f647398d49d7.png)to upload the code to the yellow robot successfully, then tap ![](media/fb11e1472597795add579dc167740fce.png) to set the baud rate to 9600，and press the button. You will see the data as follows:
 
-![图片1](media/ca9d2577c5d66ebf81bbb3effc97e1fe.png)
+![](media/ca9d2577c5d66ebf81bbb3effc97e1fe.png)
 
 **Code Explanation:**
 
@@ -490,7 +492,7 @@ When you press or release button, different digital signals will be output due t
 
 **Introduction:**
 
-**![64020010 (5)](media/b550f1ca473d1702b670b3ca7895f192.jpeg)**
+![](media/b550f1ca473d1702b670b3ca7895f192.jpeg)
 
 DC reduction motor, also called gear reduction motor, is developed on the ordinary DC motor. It has a matching gear reduction box which provides a lower speed but a larger torque. Furthermore, different reduction ratios of the box can provide different speeds and torques.
 
@@ -553,17 +555,16 @@ You can drag blocks to edit. Blocks listed below are for your reference
 ![](media/00ef8800dc7df31b1dfa62b0e69bf4eb.png)
 ![](media/ea25ce69829473a40424c68b662bc61d.png)
 
-（3）![](media/d67b570cbcbb7da761bca44989700b57.png)
+![](media/d67b570cbcbb7da761bca44989700b57.png)
 
-（4）![](media/3dac335a1f86e46c995ee1c8b96e6509.png)
+![](media/3dac335a1f86e46c995ee1c8b96e6509.png)
 
 Complete Program
 
 Theoretically, the PWM values of the left and right motors are the same, however, to make the yellow car go straight, sometimes the values of the motors are slightly different due to the hardware of the motors.
 
-![](media/52cec9a8adaee5ed4b5cda0c0bc3aef2.png)
+![](media/project_06.png)
 
-![](media/53ffd522919589e55d64aae68e68de23.png)
 
 **Project Result**
 
@@ -643,7 +644,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/1bd8fe073d7426d1d1c34be446b316d2.png)
+![](media/project_07.1.png)
 
 **Project Result1**
 
@@ -665,7 +666,8 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/3ce8ae559f7f0305fe9f4173d292c3cc.png)![](media/776bb9c0bfb896d627f3d380097a893d.png)
+![](media/project_07.2.png)
+
 
 **Project Result2**
 
@@ -700,15 +702,9 @@ Turn off the Bluetooth switch before uploading the code.
 
 Pin Trig (trigger signal input) and pin Echo are connected to digital 2 and 3 of the yellow robot.
 
-![](media/a05143bf6b313e875bdf1304c78c03aa.png)
+![](media/project_08.png)
 
-![](media/91c6998ac889073a8adb97a2afa5b85f.png)
 
-![](media/f0237fc37235f3dac9d4468b1f013218.png)
-
-![](media/677db33d335c6014af844e4118cc51a3.png)
-
-![](media/b8f66630d28f4101dc5a6e6c48613819.png)
 
 **Project Result**
 
@@ -751,9 +747,9 @@ Turn off the Bluetooth switch before uploading the code.
 
 Theoretically, the PWM values of the left and right motors are the same, both of which are 100. However, due to the hardware of the motors, to make the yellow car run stably, the values of the left and right motors are slightly different according to the actual situation.
 
-![](media/f16c0fad65cbf860baac4abd8213e2ec.png)
+![](media/project_09.png)
 
-![](media/2111ecd1c9c82b1df0fbbb10bbc46155.png)
+
 
 **Project Result**
 
@@ -823,13 +819,9 @@ Connect the PIR motion sensor to D12 of the yellow robot
 
 Turn off the Bluetooth switch before uploading the code.
 
-![](media/79439b88e89f013f9484481566a98d34.png)
+![](media/project_10.png)
 
-![](media/aead553e3345350c82ba186d6ae53118.png)
 
-![](media/99cb18a6dda5551684475bf92758c0dd.png)
-
-![](media/0a81d04e42c20bc14fba0f0b2b40430a.png)
 
 **Project Result**
 
@@ -869,13 +861,9 @@ Turn off the Bluetooth switch before uploading the code.
 
 Note: Fully charge the yellow robot if you continue further experiments. Clap your hands or make sounds with 5cm away from sound sensor.
 
-![](media/0a37307c76baa29979742c2ef84574f1.png)
+![](media/project_11.png)
 
-![](media/fa5fb289e662a5d8b8911bed63eb3139.png)
 
-![](media/d885905729badb93a955c198628ad224.png)
-
-![](media/84d7c0c9c8d119c2b4a611b9dec5e1a0.png)
 
 **Project Result**
 
@@ -933,7 +921,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Look for Code Blocks
 
-![](media/716d71bb5298afcb2c1c5d6babb9aa7a.png)
+![](media/project_12.png)
 
 **Download APP：**
 
@@ -981,17 +969,17 @@ And we also need to install an App to control this yellow robot.
 
 **Functions of App icons:**
 
-| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png) | Pairing Bluetooth                                                  |                                                                                                                                               |
+| ![](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png) | Pairing Bluetooth                                                  |                                                                                                                                               |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png) | Enter Bluetooth control interface                                  |                                                                                                                                               |
-| ![Screenshot_2019-06-17-08-21-55-51](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png) | Disconnect Bluetooth                                               |                                                                                                                                               |
+| ![](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png) | Enter Bluetooth control interface                                  |                                                                                                                                               |
+| ![](media/48aa4aeaa4494f2ec757416cfdd4fc9b.png) | Disconnect Bluetooth                                               |                                                                                                                                               |
 | ![](media/c3a35e7f8a877400cbb1ed348bfbe521.png)                                  | Press it to output F； Release it to output S                      | Go forward Stop                                                                                                                               |
 | ![](media/e6ab1ec1ab00c8d455e109459d62e08d.png)                                  | Press it to output B； Release it to output S                      | Go back Stop                                                                                                                                  |
 | ![](media/007efc69de26b29bd194d4834b5eb5b5.png)                                  | Press it to output L； Release it to output S                      | Turn left Stop                                                                                                                                |
 | ![](media/7f9b50b3ae3c5a1b505ab14bd0d25576.png)                                  | Press it to output R； Release it to output S                      | Turn right Stop                                                                                                                               |
 | ![](media/a36a60c1684cc35676bb7497a8952fbe.png)                                  | Press it to output S； Release it to output S                      | End functions                                                                                                                                 |
 | ![](media/16fc779998163a1b08a8f974a37e294e.png)                                  | Press it to send Y Release it to send Y；                          | Sound -controlled function will be activated.                                                                                                 |
-| ![](media/c4db79766a49c42936d50780e87dab34.png)                                  | "Waiting" label on the top left corner changes into  beating bytes | Beating bytes means starting  device. Robot car moves in the  corresponding direction as the tilt angle of control device (cellphone) changes |
+| ![](media/c4db79766a49c42936d50780e87dab34.png)                                  | "Waiting" label on the top left corner changes into beating bytes | Beating bytes means starting  device.  |
 | ![](media/b9df3b109b1f3320f55e41bd524d9c9d.png)                                  | Press it to output X； Release it to send X；                      | Start line tracking function； click![](media/a36a60c1684cc35676bb7497a8952fbe.png)to end this function                                       |
 | ![](media/ec6907df814b313aea2bfdeba9228b2d.png)                                  | Press it to output U； Release it to send U；                      | Start following function click![](media/a36a60c1684cc35676bb7497a8952fbe.png)to end this function                                             |
 | ![](media/e78a49ee30ff13f73ae960b627d99797.png)                                  |                                                                    | ![](media/24c63c1f750c5ec89545fa768407f549.png)                                                                                               |
@@ -1036,7 +1024,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/894250066a259d011b91633ef85ff4e7.png)
+![](media/project_13.png)
 
 **Project Result**
 
@@ -1067,7 +1055,7 @@ Turn off the Bluetooth switch before uploading the code.
 
 Complete Program
 
-![](media/dfa7e4ad7a9431d761f26e81532056c1.png)
+![](media/project_14.png)
 
 **Project Result**
 

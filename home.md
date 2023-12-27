@@ -4,7 +4,7 @@
 
 ## Download Resource:
 
-Download code, libraries and Arduino IDE:
+Download project code, libraries:
 
 <https://kd.kidsbits.cc/KD0003>
 
