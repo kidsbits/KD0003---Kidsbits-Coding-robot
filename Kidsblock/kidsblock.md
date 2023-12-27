@@ -180,7 +180,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![123](media/project_01.png)
+![123](media/Project_01.png)
 
 **Project Result**
 
@@ -236,7 +236,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/project_02.png)
+![](media/Project_02.png)
 
 **Project Result1**
 
@@ -329,7 +329,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/project_03.png)
+![](media/Project_03.png)
 
 
 **Project Result**
@@ -412,7 +412,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 ![](media/83a21b308a1629a8402fcf36faaf58e0.png)
 
 Complete Program 
-![](media/project_04.png)
+![](media/Project_04.png)
 
 
 **Project Result**
@@ -476,7 +476,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/project_05.png)
+![](media/Project_05.png)
 
 **Project Result**
 
@@ -644,7 +644,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/project_07.1.png)
+![](media/Project_07.1.png)
 
 **Project Result1**
 
@@ -666,7 +666,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/project_07.2.png)
+![](media/Project_07.2.png)
 
 
 **Project Result2**
@@ -702,7 +702,7 @@ Turn off the Bluetooth switch before uploading the code.
 
 Pin Trig (trigger signal input) and pin Echo are connected to digital 2 and 3 of the yellow robot.
 
-![](media/project_08.png)
+![](media/Project_08.png)
 
 
 
@@ -747,7 +747,7 @@ Turn off the Bluetooth switch before uploading the code.
 
 Theoretically, the PWM values of the left and right motors are the same, both of which are 100. However, due to the hardware of the motors, to make the yellow car run stably, the values of the left and right motors are slightly different according to the actual situation.
 
-![](media/project_09.png)
+![](media/Project_09.png)
 
 
 
@@ -819,7 +819,7 @@ Connect the PIR motion sensor to D12 of the yellow robot
 
 Turn off the Bluetooth switch before uploading the code.
 
-![](media/project_10.png)
+![](media/Project_10.png)
 
 
 
@@ -861,7 +861,7 @@ Turn off the Bluetooth switch before uploading the code.
 
 Note: Fully charge the yellow robot if you continue further experiments. Clap your hands or make sounds with 5cm away from sound sensor.
 
-![](media/project_11.png)
+![](media/Project_11.png)
 
 
 
@@ -921,7 +921,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Look for Code Blocks
 
-![](media/project_12.png)
+![](media/Project_12.png)
 
 **Download APP：**
 
@@ -1024,7 +1024,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/project_13.png)
+![](media/Project_13.png)
 
 **Project Result**
 
@@ -1055,7 +1055,7 @@ Turn off the Bluetooth switch before uploading the code.
 
 Complete Program
 
-![](media/project_14.png)
+![](media/Project_14.png)
 
 **Project Result**
 
