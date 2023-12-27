@@ -1,7 +1,7 @@
 /*
 kidsbits coding robot kit
 Project 13
-Bluetooth Knowledge
+Bluetooth remote robot
 http//www.kidsbits.cc
 */
 #include <Matrix.h>

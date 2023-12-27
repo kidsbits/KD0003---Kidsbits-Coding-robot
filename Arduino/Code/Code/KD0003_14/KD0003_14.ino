@@ -1,7 +1,7 @@
 /*
 kidsbits coding robot kit
 Project 14
-Bluetooth Robot Car
+Control Robot by APP
 http//www.kidsbits.cc
 */
 #include <Matrix.h>
