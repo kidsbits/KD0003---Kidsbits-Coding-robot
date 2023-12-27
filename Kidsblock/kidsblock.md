@@ -236,7 +236,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/Project_02.png)
+![](media/Project_02.1.png)
 
 **Project Result1**
 
@@ -257,7 +257,7 @@ You can drag blocks to edit. Blocks listed below are for your reference
 
 Complete Program
 
-![](media/4c712dc0d9e19594938a3d115d03fe6b.png)
+![](media/Project_02.2.png)
 
 **Project Result2**
 
